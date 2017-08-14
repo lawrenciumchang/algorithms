@@ -21,6 +21,16 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
             viewControllerArray.append(timerVC!)
         }
         
+        let f2lVC: UIViewController? = UIStoryboard(name: "F2L", bundle: nil).instantiateInitialViewController()
+        if f2lVC != nil {
+            viewControllerArray.append(f2lVC!)
+        }
+        
+        let orientationsVC: UIViewController? = UIStoryboard(name: "Orientations", bundle: nil).instantiateInitialViewController()
+        if orientationsVC != nil {
+            viewControllerArray.append(orientationsVC!)
+        }
+        
         let permutationsVC: UIViewController? = UIStoryboard(name: "Permutations", bundle: nil).instantiateInitialViewController()
         if permutationsVC != nil {
             viewControllerArray.append(permutationsVC!)

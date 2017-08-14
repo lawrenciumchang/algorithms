@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pKb-yO-tsn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--F2L-->
+        <scene sceneID="qfp-Or-4Mf">
+            <objects>
+                <navigationController id="pKb-yO-tsn" userLabel="F2L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="F2L" id="joo-zo-a8V"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c19-4U-P9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AIf-VH-CUz" kind="relationship" relationship="rootViewController" id="Cef-oC-bOr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbf-qp-THc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423" y="130"/>
+        </scene>
+        <!--F2L View Controller-->
+        <scene sceneID="f1V-eQ-7uE">
+            <objects>
+                <viewController id="AIf-VH-CUz" userLabel="F2L View Controller" customClass="F2LViewController" customModule="Algorithms" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jIt-iI-gnz"/>
+                        <viewControllerLayoutGuide type="bottom" id="0IX-1K-A6q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7sU-MV-v25">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="F2L" id="M9J-BX-jHO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iD2-Vc-8SH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="130"/>
+        </scene>
+    </scenes>
+</document>

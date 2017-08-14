@@ -15,6 +15,10 @@
 		8B535C4F1F422A3600DE9B68 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C4E1F422A3600DE9B68 /* TimerViewController.swift */; };
 		8B535C511F422A3E00DE9B68 /* Permutations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C501F422A3E00DE9B68 /* Permutations.storyboard */; };
 		8B535C531F422A4800DE9B68 /* PermutationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */; };
+		8B535C571F42315900DE9B68 /* F2L.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C561F42315900DE9B68 /* F2L.storyboard */; };
+		8B535C591F42316500DE9B68 /* F2LViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C581F42316500DE9B68 /* F2LViewController.swift */; };
+		8B535C5B1F42316C00DE9B68 /* OrientationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C5A1F42316C00DE9B68 /* OrientationsViewController.swift */; };
+		8B535C5D1F42317800DE9B68 /* Orientations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C5C1F42317800DE9B68 /* Orientations.storyboard */; };
 		8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */; };
 		8BEC8BCE1F41F08A00D26EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -28,6 +32,10 @@
 		8B535C4E1F422A3600DE9B68 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		8B535C501F422A3E00DE9B68 /* Permutations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Permutations.storyboard; sourceTree = "<group>"; };
 		8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermutationsViewController.swift; sourceTree = "<group>"; };
+		8B535C561F42315900DE9B68 /* F2L.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = F2L.storyboard; sourceTree = "<group>"; };
+		8B535C581F42316500DE9B68 /* F2LViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F2LViewController.swift; sourceTree = "<group>"; };
+		8B535C5A1F42316C00DE9B68 /* OrientationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationsViewController.swift; sourceTree = "<group>"; };
+		8B535C5C1F42317800DE9B68 /* Orientations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Orientations.storyboard; sourceTree = "<group>"; };
 		8BEC8BC11F41F08A00D26EF0 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +74,8 @@
 				8B535C401F4226D600DE9B68 /* LaunchScreen */,
 				8B535C431F4227D200DE9B68 /* Main */,
 				8B535C441F4227E400DE9B68 /* Timer */,
+				8B535C541F42313400DE9B68 /* F2L */,
+				8B535C551F42314100DE9B68 /* Orientations */,
 				8B535C4B1F42291700DE9B68 /* Permutations */,
 				8B535C3F1F4226A500DE9B68 /* Resources */,
 			);
@@ -113,6 +123,24 @@
 				8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */,
 			);
 			name = Permutations;
+			sourceTree = "<group>";
+		};
+		8B535C541F42313400DE9B68 /* F2L */ = {
+			isa = PBXGroup;
+			children = (
+				8B535C561F42315900DE9B68 /* F2L.storyboard */,
+				8B535C581F42316500DE9B68 /* F2LViewController.swift */,
+			);
+			name = F2L;
+			sourceTree = "<group>";
+		};
+		8B535C551F42314100DE9B68 /* Orientations */ = {
+			isa = PBXGroup;
+			children = (
+				8B535C5C1F42317800DE9B68 /* Orientations.storyboard */,
+				8B535C5A1F42316C00DE9B68 /* OrientationsViewController.swift */,
+			);
+			name = Orientations;
 			sourceTree = "<group>";
 		};
 		8BEC8BB81F41F08A00D26EF0 = {
@@ -206,6 +234,8 @@
 				8B535C511F422A3E00DE9B68 /* Permutations.storyboard in Resources */,
 				8B535C4D1F422A2B00DE9B68 /* Timer.storyboard in Resources */,
 				8B535C461F42283C00DE9B68 /* Main.storyboard in Resources */,
+				8B535C5D1F42317800DE9B68 /* Orientations.storyboard in Resources */,
+				8B535C571F42315900DE9B68 /* F2L.storyboard in Resources */,
 				8BEC8BCE1F41F08A00D26EF0 /* Assets.xcassets in Resources */,
 				8B535C421F4226E700DE9B68 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -220,7 +250,9 @@
 			files = (
 				8B535C531F422A4800DE9B68 /* PermutationsViewController.swift in Sources */,
 				8B535C4F1F422A3600DE9B68 /* TimerViewController.swift in Sources */,
+				8B535C5B1F42316C00DE9B68 /* OrientationsViewController.swift in Sources */,
 				8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */,
+				8B535C591F42316500DE9B68 /* F2LViewController.swift in Sources */,
 				8B535C481F42285300DE9B68 /* MainTabBarViewController.swift in Sources */,
 				8B535C4A1F4228DB00DE9B68 /* Constants.swift in Sources */,
 			);
