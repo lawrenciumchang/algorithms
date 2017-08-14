@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B535C421F4226E700DE9B68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C411F4226E700DE9B68 /* LaunchScreen.storyboard */; };
+		8B535C461F42283C00DE9B68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C451F42283C00DE9B68 /* Main.storyboard */; };
+		8B535C481F42285300DE9B68 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C471F42285300DE9B68 /* MainTabBarViewController.swift */; };
+		8B535C4A1F4228DB00DE9B68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C491F4228DB00DE9B68 /* Constants.swift */; };
+		8B535C4D1F422A2B00DE9B68 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C4C1F422A2A00DE9B68 /* Timer.storyboard */; };
+		8B535C4F1F422A3600DE9B68 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C4E1F422A3600DE9B68 /* TimerViewController.swift */; };
+		8B535C511F422A3E00DE9B68 /* Permutations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C501F422A3E00DE9B68 /* Permutations.storyboard */; };
+		8B535C531F422A4800DE9B68 /* PermutationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */; };
 		8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */; };
-		8BEC8BC71F41F08A00D26EF0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC8BC61F41F08A00D26EF0 /* FirstViewController.swift */; };
-		8BEC8BC91F41F08A00D26EF0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC8BC81F41F08A00D26EF0 /* SecondViewController.swift */; };
-		8BEC8BCC1F41F08A00D26EF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC8BCA1F41F08A00D26EF0 /* Main.storyboard */; };
 		8BEC8BCE1F41F08A00D26EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */; };
-		8BEC8BD11F41F08A00D26EF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC8BCF1F41F08A00D26EF0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B535C411F4226E700DE9B68 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B535C451F42283C00DE9B68 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8B535C471F42285300DE9B68 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		8B535C491F4228DB00DE9B68 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8B535C4C1F422A2A00DE9B68 /* Timer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		8B535C4E1F422A3600DE9B68 /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		8B535C501F422A3E00DE9B68 /* Permutations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Permutations.storyboard; sourceTree = "<group>"; };
+		8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermutationsViewController.swift; sourceTree = "<group>"; };
 		8BEC8BC11F41F08A00D26EF0 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BEC8BC61F41F08A00D26EF0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8BEC8BC81F41F08A00D26EF0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		8BEC8BCB1F41F08A00D26EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8BEC8BD01F41F08A00D26EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BEC8BD21F41F08A00D26EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +45,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B535C3B1F42262200DE9B68 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		8B535C3D1F42263400DE9B68 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8B535C491F4228DB00DE9B68 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		8B535C3E1F42263800DE9B68 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8B535C401F4226D600DE9B68 /* LaunchScreen */,
+				8B535C431F4227D200DE9B68 /* Main */,
+				8B535C441F4227E400DE9B68 /* Timer */,
+				8B535C4B1F42291700DE9B68 /* Permutations */,
+				8B535C3F1F4226A500DE9B68 /* Resources */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		8B535C3F1F4226A500DE9B68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8B535C401F4226D600DE9B68 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8B535C411F4226E700DE9B68 /* LaunchScreen.storyboard */,
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		8B535C431F4227D200DE9B68 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8B535C451F42283C00DE9B68 /* Main.storyboard */,
+				8B535C471F42285300DE9B68 /* MainTabBarViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8B535C441F4227E400DE9B68 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				8B535C4C1F422A2A00DE9B68 /* Timer.storyboard */,
+				8B535C4E1F422A3600DE9B68 /* TimerViewController.swift */,
+			);
+			name = Timer;
+			sourceTree = "<group>";
+		};
+		8B535C4B1F42291700DE9B68 /* Permutations */ = {
+			isa = PBXGroup;
+			children = (
+				8B535C501F422A3E00DE9B68 /* Permutations.storyboard */,
+				8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */,
+			);
+			name = Permutations;
+			sourceTree = "<group>";
+		};
 		8BEC8BB81F41F08A00D26EF0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +134,10 @@
 		8BEC8BC31F41F08A00D26EF0 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				8B535C3B1F42262200DE9B68 /* Components */,
+				8B535C3D1F42263400DE9B68 /* Constants */,
+				8B535C3E1F42263800DE9B68 /* Storyboard */,
 				8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */,
-				8BEC8BC61F41F08A00D26EF0 /* FirstViewController.swift */,
-				8BEC8BC81F41F08A00D26EF0 /* SecondViewController.swift */,
-				8BEC8BCA1F41F08A00D26EF0 /* Main.storyboard */,
-				8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */,
-				8BEC8BCF1F41F08A00D26EF0 /* LaunchScreen.storyboard */,
 				8BEC8BD21F41F08A00D26EF0 /* Info.plist */,
 			);
 			path = Algorithms;
@@ -127,9 +203,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BEC8BD11F41F08A00D26EF0 /* LaunchScreen.storyboard in Resources */,
+				8B535C511F422A3E00DE9B68 /* Permutations.storyboard in Resources */,
+				8B535C4D1F422A2B00DE9B68 /* Timer.storyboard in Resources */,
+				8B535C461F42283C00DE9B68 /* Main.storyboard in Resources */,
 				8BEC8BCE1F41F08A00D26EF0 /* Assets.xcassets in Resources */,
-				8BEC8BCC1F41F08A00D26EF0 /* Main.storyboard in Resources */,
+				8B535C421F4226E700DE9B68 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,32 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BEC8BC91F41F08A00D26EF0 /* SecondViewController.swift in Sources */,
+				8B535C531F422A4800DE9B68 /* PermutationsViewController.swift in Sources */,
+				8B535C4F1F422A3600DE9B68 /* TimerViewController.swift in Sources */,
 				8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */,
-				8BEC8BC71F41F08A00D26EF0 /* FirstViewController.swift in Sources */,
+				8B535C481F42285300DE9B68 /* MainTabBarViewController.swift in Sources */,
+				8B535C4A1F4228DB00DE9B68 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8BEC8BCA1F41F08A00D26EF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BEC8BCB1F41F08A00D26EF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8BEC8BCF1F41F08A00D26EF0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BEC8BD01F41F08A00D26EF0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8BEC8BD31F41F08A00D26EF0 /* Debug */ = {
@@ -306,6 +367,7 @@
 				8BEC8BD71F41F08A00D26EF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
