@@ -6,14 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Permutations-->
         <scene sceneID="RMG-MQ-LfQ">
             <objects>
-                <navigationController id="8eU-BT-vMS" userLabel="Permutations" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="8eU-BT-vMS" userLabel="Permutations" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Permutations" id="A6b-tD-9ue"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pVm-up-6JC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -38,13 +40,27 @@
                     <view key="view" contentMode="scaleToFill" id="gLr-Wc-uRV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permutations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCt-fk-D9d">
+                                <rect key="frame" x="16" y="40" width="343" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bCt-fk-D9d" firstAttribute="leading" secondItem="gLr-Wc-uRV" secondAttribute="leadingMargin" id="1bZ-hw-Nm5"/>
+                            <constraint firstItem="bCt-fk-D9d" firstAttribute="trailing" secondItem="gLr-Wc-uRV" secondAttribute="trailingMargin" id="EVg-ZO-xVC"/>
+                            <constraint firstItem="bCt-fk-D9d" firstAttribute="top" secondItem="gLr-Wc-uRV" secondAttribute="topMargin" constant="40" id="uOq-RV-lvo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Permutations" id="nzU-Gq-e7h"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F49-gw-TJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="314"/>
+            <point key="canvasLocation" x="149.59999999999999" y="313.49325337331339"/>
         </scene>
     </scenes>
 </document>

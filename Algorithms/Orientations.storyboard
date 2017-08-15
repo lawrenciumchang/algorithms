@@ -6,14 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Orientations-->
         <scene sceneID="1X0-Dj-xSe">
             <objects>
-                <navigationController id="jad-J6-HEi" userLabel="Orientations" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="jad-J6-HEi" userLabel="Orientations" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Orientations" id="oD9-fi-DeN"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uiH-Dv-Jsm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -38,13 +40,27 @@
                     <view key="view" contentMode="scaleToFill" id="vuO-b2-WcD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orientations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xa-DG-Mw4">
+                                <rect key="frame" x="16" y="40" width="343" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Xa-DG-Mw4" firstAttribute="trailing" secondItem="vuO-b2-WcD" secondAttribute="trailingMargin" id="eXF-vB-ZnX"/>
+                            <constraint firstItem="0Xa-DG-Mw4" firstAttribute="top" secondItem="vuO-b2-WcD" secondAttribute="topMargin" constant="40" id="iRI-be-08i"/>
+                            <constraint firstItem="0Xa-DG-Mw4" firstAttribute="leading" secondItem="vuO-b2-WcD" secondAttribute="leadingMargin" id="wYw-2M-t5Q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Orientations" id="7UO-1f-3yU"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xsd-TP-NmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-260" y="77"/>
+            <point key="canvasLocation" x="-260" y="76.911544227886068"/>
         </scene>
     </scenes>
 </document>

@@ -12,8 +12,9 @@
         <!--Timer-->
         <scene sceneID="Hzn-yk-yZy">
             <objects>
-                <navigationController id="A9V-EM-tw1" userLabel="Timer" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="A9V-EM-tw1" userLabel="Timer" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Timer" id="no9-Wz-Woj" userLabel="Timer"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xVK-fk-wVj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -41,6 +42,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Timer" id="eeN-TH-Ibc"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvg-Zx-HF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
