@@ -11,7 +11,7 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var permutationImage: UIImageView!
+    @IBOutlet weak var cubeImage: UIImageView!
     @IBOutlet weak var solutionLabel: UILabel!
 
 }

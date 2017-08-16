@@ -45,7 +45,7 @@ class OrientationsViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ permutationsTable: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = permutationsTable.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
-        cell.permutationImage.image = UIImage(named: dataList[indexPath.row].0)
+        cell.cubeImage.image = UIImage(named: dataList[indexPath.row].0)
         cell.solutionLabel.text = dataList[indexPath.row].1
         return cell
     }

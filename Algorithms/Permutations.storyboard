@@ -50,7 +50,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hho-9b-NG3" id="zp5-F3-YXq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-zR-NOK">
@@ -77,7 +77,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="permutationImage" destination="xKM-zR-NOK" id="FLf-KV-25Y"/>
+                                            <outlet property="cubeImage" destination="xKM-zR-NOK" id="NgW-c1-MYX"/>
                                             <outlet property="solutionLabel" destination="ScH-em-fnW" id="pHF-59-yMg"/>
                                         </connections>
                                     </tableViewCell>

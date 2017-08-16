@@ -283,7 +283,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B4B84581F44A067003486C7 /* Permutation Images */ = {
+		8B4B84581F44A067003486C7 /* PermutationImages */ = {
 			isa = PBXGroup;
 			children = (
 				8B4B845F1F44A2A8003486C7 /* p1.gif */,
@@ -303,10 +303,10 @@
 				8B4B846F1F44AC08003486C7 /* p12b.gif */,
 				8B4B84701F44AC08003486C7 /* p13.gif */,
 			);
-			name = "Permutation Images";
+			name = PermutationImages;
 			sourceTree = "<group>";
 		};
-		8B4B847F1F44E49F003486C7 /* Orientation Images */ = {
+		8B4B847F1F44E49F003486C7 /* OrientationImages */ = {
 			isa = PBXGroup;
 			children = (
 				8B4B85441F44E509003486C7 /* o1.gif */,
@@ -408,7 +408,15 @@
 				8B4B85A41F44E509003486C7 /* o39.gif */,
 				8B4B85A51F44E509003486C7 /* o40.gif */,
 			);
-			name = "Orientation Images";
+			name = OrientationImages;
+			sourceTree = "<group>";
+		};
+		8B4B86081F44E759003486C7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B84541F449157003486C7 /* CustomTableViewCell.swift */,
+			);
+			name = CustomViews;
 			sourceTree = "<group>";
 		};
 		8B535C3B1F42262200DE9B68 /* Components */ = {
@@ -435,6 +443,7 @@
 				8B535C541F42313400DE9B68 /* F2L */,
 				8B535C551F42314100DE9B68 /* Orientations */,
 				8B535C4B1F42291700DE9B68 /* Permutations */,
+				8B4B86081F44E759003486C7 /* CustomViews */,
 				8B535C3F1F4226A500DE9B68 /* Resources */,
 			);
 			name = Storyboard;
@@ -443,8 +452,8 @@
 		8B535C3F1F4226A500DE9B68 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8B4B847F1F44E49F003486C7 /* Orientation Images */,
-				8B4B84581F44A067003486C7 /* Permutation Images */,
+				8B4B847F1F44E49F003486C7 /* OrientationImages */,
+				8B4B84581F44A067003486C7 /* PermutationImages */,
 				8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -481,7 +490,6 @@
 			children = (
 				8B535C501F422A3E00DE9B68 /* Permutations.storyboard */,
 				8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */,
-				8B4B84541F449157003486C7 /* CustomTableViewCell.swift */,
 			);
 			name = Permutations;
 			sourceTree = "<group>";
