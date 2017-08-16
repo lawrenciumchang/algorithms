@@ -42,21 +42,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F2L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gup-iz-asT">
-                                <rect key="frame" x="16" y="46" width="343" height="45.5"/>
+                                <rect key="frame" x="16" y="46" width="343" height="46"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHl-As-6c4">
+                                <rect key="frame" x="35" y="538" width="305" height="42"/>
+                                <color key="backgroundColor" red="0.35756117599999998" green="0.4048585938" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="kzA-LQ-XE3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="F2L Algorithms"/>
+                                <connections>
+                                    <action selector="onBtnClick:" destination="AIf-VH-CUz" eventType="touchUpInside" id="5GN-yP-OWr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Gup-iz-asT" firstAttribute="top" secondItem="7sU-MV-v25" secondAttribute="topMargin" constant="46" id="71k-xC-AQW"/>
                             <constraint firstItem="Gup-iz-asT" firstAttribute="trailing" secondItem="7sU-MV-v25" secondAttribute="trailingMargin" id="giT-Ov-zgz"/>
+                            <constraint firstItem="sHl-As-6c4" firstAttribute="centerX" secondItem="Gup-iz-asT" secondAttribute="centerX" id="gip-P4-TUg"/>
+                            <constraint firstItem="sHl-As-6c4" firstAttribute="leading" secondItem="7sU-MV-v25" secondAttribute="leadingMargin" constant="19" id="yqL-Ox-Zan"/>
                             <constraint firstItem="Gup-iz-asT" firstAttribute="leading" secondItem="7sU-MV-v25" secondAttribute="leadingMargin" id="zFl-U2-Awk"/>
+                            <constraint firstItem="0IX-1K-A6q" firstAttribute="top" secondItem="sHl-As-6c4" secondAttribute="bottom" constant="38" id="zfl-AW-0yk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="F2L" id="M9J-BX-jHO"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="algorithmsBtn" destination="sHl-As-6c4" id="B0b-Tt-jZe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iD2-Vc-8SH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
