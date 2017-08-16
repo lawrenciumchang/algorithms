@@ -46,6 +46,10 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         self.selectedIndex = tabBarScreen.rawValue
     }
     
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    }
+    
 }
 
 
