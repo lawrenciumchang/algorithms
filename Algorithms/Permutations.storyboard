@@ -47,16 +47,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eb4-Fe-IV7">
+                                <rect key="frame" x="0.0" y="87" width="375" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="120" id="Hho-9b-NG3" customClass="CustomTableViewCell" customModule="Algorithms" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hho-9b-NG3" id="zp5-F3-YXq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="solutionLabel" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="178" translatesAutoresizingMaskIntoConstraints="NO" id="ScH-em-fnW">
+                                                    <rect key="frame" x="152" y="8" width="215" height="104"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="215" id="O50-YC-gJg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-zR-NOK">
+                                                    <rect key="frame" x="8" y="0.0" width="120" height="120"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ScH-em-fnW" firstAttribute="top" secondItem="zp5-F3-YXq" secondAttribute="topMargin" id="NwA-0O-9Ae"/>
+                                                <constraint firstItem="xKM-zR-NOK" firstAttribute="top" secondItem="zp5-F3-YXq" secondAttribute="top" id="RpY-8T-XdH"/>
+                                                <constraint firstItem="ScH-em-fnW" firstAttribute="centerY" secondItem="zp5-F3-YXq" secondAttribute="centerY" id="Tk4-fO-O0E"/>
+                                                <constraint firstItem="ScH-em-fnW" firstAttribute="trailing" secondItem="zp5-F3-YXq" secondAttribute="trailingMargin" id="dAv-NY-BBg"/>
+                                                <constraint firstItem="xKM-zR-NOK" firstAttribute="leading" secondItem="zp5-F3-YXq" secondAttribute="leadingMargin" id="kFb-uq-F8D"/>
+                                                <constraint firstItem="xKM-zR-NOK" firstAttribute="centerY" secondItem="ScH-em-fnW" secondAttribute="centerY" id="wwK-Hq-LVg"/>
+                                                <constraint firstItem="ScH-em-fnW" firstAttribute="leading" secondItem="xKM-zR-NOK" secondAttribute="trailing" constant="24" id="zKZ-M7-09G"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="permutationImage" destination="xKM-zR-NOK" id="FLf-KV-25Y"/>
+                                            <outlet property="solutionLabel" destination="ScH-em-fnW" id="pHF-59-yMg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bCt-fk-D9d" firstAttribute="leading" secondItem="gLr-Wc-uRV" secondAttribute="leadingMargin" id="1bZ-hw-Nm5"/>
+                            <constraint firstItem="Eb4-Fe-IV7" firstAttribute="top" secondItem="bCt-fk-D9d" secondAttribute="bottom" constant="8" id="D2r-IR-n9M"/>
                             <constraint firstItem="bCt-fk-D9d" firstAttribute="trailing" secondItem="gLr-Wc-uRV" secondAttribute="trailingMargin" id="EVg-ZO-xVC"/>
+                            <constraint firstItem="Eb4-Fe-IV7" firstAttribute="leading" secondItem="bCt-fk-D9d" secondAttribute="leading" constant="-16" id="U6G-ai-Twz"/>
+                            <constraint firstItem="Eb4-Fe-IV7" firstAttribute="centerX" secondItem="gLr-Wc-uRV" secondAttribute="centerX" id="YJY-eO-Ik3"/>
                             <constraint firstItem="bCt-fk-D9d" firstAttribute="top" secondItem="gLr-Wc-uRV" secondAttribute="topMargin" constant="40" id="uOq-RV-lvo"/>
+                            <constraint firstAttribute="bottom" secondItem="Eb4-Fe-IV7" secondAttribute="bottom" id="w9V-pj-vav"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Permutations" id="nzU-Gq-e7h"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="permutationsTable" destination="Eb4-Fe-IV7" id="kKV-gU-7WA"/>
+                        <outlet property="titleLabel" destination="bCt-fk-D9d" id="n6m-n8-CsE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F49-gw-TJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

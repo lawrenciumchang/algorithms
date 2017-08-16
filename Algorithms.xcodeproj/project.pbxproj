@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B4B84551F449157003486C7 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4B84541F449157003486C7 /* CustomTableViewCell.swift */; };
+		8B4B84611F44A2A8003486C7 /* p1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B4B845F1F44A2A8003486C7 /* p1.gif */; };
+		8B4B84621F44A2A8003486C7 /* p1b.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8B4B84601F44A2A8003486C7 /* p1b.gif */; };
 		8B535C421F4226E700DE9B68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C411F4226E700DE9B68 /* LaunchScreen.storyboard */; };
 		8B535C461F42283C00DE9B68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C451F42283C00DE9B68 /* Main.storyboard */; };
 		8B535C481F42285300DE9B68 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C471F42285300DE9B68 /* MainTabBarViewController.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B4B84541F449157003486C7 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		8B4B845F1F44A2A8003486C7 /* p1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = p1.gif; path = images/permutations/p1.gif; sourceTree = "<group>"; };
+		8B4B84601F44A2A8003486C7 /* p1b.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = p1b.gif; path = images/permutations/p1b.gif; sourceTree = "<group>"; };
 		8B535C411F4226E700DE9B68 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B535C451F42283C00DE9B68 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B535C471F42285300DE9B68 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B4B84581F44A067003486C7 /* Permutation Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B4B845F1F44A2A8003486C7 /* p1.gif */,
+				8B4B84601F44A2A8003486C7 /* p1b.gif */,
+			);
+			name = "Permutation Images";
+			sourceTree = "<group>";
+		};
 		8B535C3B1F42262200DE9B68 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,7 @@
 		8B535C3F1F4226A500DE9B68 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8B4B84581F44A067003486C7 /* Permutation Images */,
 				8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */,
 			);
 			name = Resources;
@@ -121,6 +137,7 @@
 			children = (
 				8B535C501F422A3E00DE9B68 /* Permutations.storyboard */,
 				8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */,
+				8B4B84541F449157003486C7 /* CustomTableViewCell.swift */,
 			);
 			name = Permutations;
 			sourceTree = "<group>";
@@ -234,8 +251,10 @@
 				8B535C511F422A3E00DE9B68 /* Permutations.storyboard in Resources */,
 				8B535C4D1F422A2B00DE9B68 /* Timer.storyboard in Resources */,
 				8B535C461F42283C00DE9B68 /* Main.storyboard in Resources */,
+				8B4B84611F44A2A8003486C7 /* p1.gif in Resources */,
 				8B535C5D1F42317800DE9B68 /* Orientations.storyboard in Resources */,
 				8B535C571F42315900DE9B68 /* F2L.storyboard in Resources */,
+				8B4B84621F44A2A8003486C7 /* p1b.gif in Resources */,
 				8BEC8BCE1F41F08A00D26EF0 /* Assets.xcassets in Resources */,
 				8B535C421F4226E700DE9B68 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -250,6 +269,7 @@
 			files = (
 				8B535C531F422A4800DE9B68 /* PermutationsViewController.swift in Sources */,
 				8B535C4F1F422A3600DE9B68 /* TimerViewController.swift in Sources */,
+				8B4B84551F449157003486C7 /* CustomTableViewCell.swift in Sources */,
 				8B535C5B1F42316C00DE9B68 /* OrientationsViewController.swift in Sources */,
 				8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */,
 				8B535C591F42316500DE9B68 /* F2LViewController.swift in Sources */,
