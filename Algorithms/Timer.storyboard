@@ -42,8 +42,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMl-W7-U9m">
-                                <rect key="frame" x="16" y="40" width="343" height="39"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <rect key="frame" x="16" y="46" width="343" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -52,7 +52,7 @@
                         <constraints>
                             <constraint firstItem="qMl-W7-U9m" firstAttribute="trailing" secondItem="hbF-Cl-Zb1" secondAttribute="trailingMargin" id="3y5-Ft-Z68"/>
                             <constraint firstItem="qMl-W7-U9m" firstAttribute="leading" secondItem="hbF-Cl-Zb1" secondAttribute="leadingMargin" id="X77-15-WcI"/>
-                            <constraint firstItem="qMl-W7-U9m" firstAttribute="top" secondItem="hbF-Cl-Zb1" secondAttribute="topMargin" constant="40" id="nfT-hb-3Vj"/>
+                            <constraint firstItem="qMl-W7-U9m" firstAttribute="top" secondItem="hbF-Cl-Zb1" secondAttribute="topMargin" constant="46" id="nfT-hb-3Vj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Timer" id="eeN-TH-Ibc"/>

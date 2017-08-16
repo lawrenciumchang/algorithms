@@ -42,15 +42,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F2L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gup-iz-asT">
-                                <rect key="frame" x="16" y="40" width="343" height="39"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <rect key="frame" x="16" y="46" width="343" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Gup-iz-asT" firstAttribute="top" secondItem="7sU-MV-v25" secondAttribute="topMargin" constant="40" id="71k-xC-AQW"/>
+                            <constraint firstItem="Gup-iz-asT" firstAttribute="top" secondItem="7sU-MV-v25" secondAttribute="topMargin" constant="46" id="71k-xC-AQW"/>
                             <constraint firstItem="Gup-iz-asT" firstAttribute="trailing" secondItem="7sU-MV-v25" secondAttribute="trailingMargin" id="giT-Ov-zgz"/>
                             <constraint firstItem="Gup-iz-asT" firstAttribute="leading" secondItem="7sU-MV-v25" secondAttribute="leadingMargin" id="zFl-U2-Awk"/>
                         </constraints>

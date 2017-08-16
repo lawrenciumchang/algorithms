@@ -42,13 +42,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permutations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCt-fk-D9d">
-                                <rect key="frame" x="16" y="40" width="343" height="39"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <rect key="frame" x="16" y="46" width="343" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eb4-Fe-IV7">
-                                <rect key="frame" x="0.0" y="87" width="375" height="531"/>
+                                <rect key="frame" x="0.0" y="99.5" width="375" height="518.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="120" id="Hho-9b-NG3" customClass="CustomTableViewCell" customModule="Algorithms" customModuleProvider="target">
@@ -96,7 +96,7 @@
                             <constraint firstItem="bCt-fk-D9d" firstAttribute="trailing" secondItem="gLr-Wc-uRV" secondAttribute="trailingMargin" id="EVg-ZO-xVC"/>
                             <constraint firstItem="Eb4-Fe-IV7" firstAttribute="leading" secondItem="bCt-fk-D9d" secondAttribute="leading" constant="-16" id="U6G-ai-Twz"/>
                             <constraint firstItem="Eb4-Fe-IV7" firstAttribute="centerX" secondItem="gLr-Wc-uRV" secondAttribute="centerX" id="YJY-eO-Ik3"/>
-                            <constraint firstItem="bCt-fk-D9d" firstAttribute="top" secondItem="gLr-Wc-uRV" secondAttribute="topMargin" constant="40" id="uOq-RV-lvo"/>
+                            <constraint firstItem="bCt-fk-D9d" firstAttribute="top" secondItem="gLr-Wc-uRV" secondAttribute="topMargin" constant="46" id="uOq-RV-lvo"/>
                             <constraint firstAttribute="bottom" secondItem="Eb4-Fe-IV7" secondAttribute="bottom" id="w9V-pj-vav"/>
                         </constraints>
                     </view>
