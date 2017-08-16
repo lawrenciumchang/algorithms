@@ -14,7 +14,7 @@
         <scene sceneID="RMG-MQ-LfQ">
             <objects>
                 <navigationController navigationBarHidden="YES" id="8eU-BT-vMS" userLabel="Permutations" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Permutations" id="A6b-tD-9ue"/>
+                    <tabBarItem key="tabBarItem" title="Permutations" image="second" id="A6b-tD-9ue"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pVm-up-6JC">
@@ -63,4 +63,7 @@
             <point key="canvasLocation" x="149.59999999999999" y="313.49325337331339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
 </document>

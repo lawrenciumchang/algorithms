@@ -14,7 +14,7 @@
         <scene sceneID="1X0-Dj-xSe">
             <objects>
                 <navigationController navigationBarHidden="YES" id="jad-J6-HEi" userLabel="Orientations" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Orientations" id="oD9-fi-DeN"/>
+                    <tabBarItem key="tabBarItem" title="Orientations" image="second" id="oD9-fi-DeN"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uiH-Dv-Jsm">
@@ -63,4 +63,7 @@
             <point key="canvasLocation" x="-260" y="76.911544227886068"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
 </document>

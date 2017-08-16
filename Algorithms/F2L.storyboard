@@ -14,7 +14,7 @@
         <scene sceneID="qfp-Or-4Mf">
             <objects>
                 <navigationController navigationBarHidden="YES" id="pKb-yO-tsn" userLabel="F2L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="F2L" id="joo-zo-a8V"/>
+                    <tabBarItem key="tabBarItem" title="F2L" image="second" id="joo-zo-a8V"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c19-4U-P9f">
@@ -63,4 +63,7 @@
             <point key="canvasLocation" x="341.60000000000002" y="129.98500749625188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
 </document>
