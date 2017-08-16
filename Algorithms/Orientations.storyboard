@@ -16,7 +16,7 @@
                 <navigationController navigationBarHidden="YES" id="jad-J6-HEi" userLabel="Orientations" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Orientations" image="second" id="oD9-fi-DeN"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uiH-Dv-Jsm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,7 +38,7 @@
                         <viewControllerLayoutGuide type="bottom" id="V9g-Vh-vR7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vuO-b2-WcD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orientations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xa-DG-Mw4">

@@ -16,7 +16,7 @@
                 <navigationController navigationBarHidden="YES" id="pKb-yO-tsn" userLabel="F2L" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="F2L" image="second" id="joo-zo-a8V"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c19-4U-P9f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,7 +38,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0IX-1K-A6q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7sU-MV-v25">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F2L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gup-iz-asT">

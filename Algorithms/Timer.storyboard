@@ -16,7 +16,7 @@
                 <navigationController navigationBarHidden="YES" id="A9V-EM-tw1" userLabel="Timer" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Timer" image="first" id="no9-Wz-Woj" userLabel="Timer"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xVK-fk-wVj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,7 +38,7 @@
                         <viewControllerLayoutGuide type="bottom" id="EX4-Nb-gWr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hbF-Cl-Zb1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMl-W7-U9m">
