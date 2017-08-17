@@ -46,7 +46,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="82" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="130" id="Hho-9b-NG3" customClass="CustomTableViewCell" customModule="Algorithms" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="130" id="Hho-9b-NG3" customClass="CustomTableViewCell" customModule="Algorithms" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hho-9b-NG3" id="zp5-F3-YXq">
@@ -115,11 +115,46 @@
                         <outlet property="permutationsTable" destination="Eb4-Fe-IV7" id="kKV-gU-7WA"/>
                         <outlet property="titleLabel" destination="bCt-fk-D9d" id="n6m-n8-CsE"/>
                         <outlet property="titleView" destination="mTV-Tb-vxt" id="i3v-cg-jMG"/>
+                        <segue destination="8vu-yA-dOC" kind="show" identifier="ShowPermutationsDetail" id="7h9-7p-num"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F49-gw-TJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="149.59999999999999" y="313.49325337331339"/>
+        </scene>
+        <!--Permutations Detail View Controller-->
+        <scene sceneID="iVY-Ee-phC">
+            <objects>
+                <viewController id="8vu-yA-dOC" userLabel="Permutations Detail View Controller" customClass="PermutationsDetailViewController" customModule="Algorithms" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pmr-OM-9b7"/>
+                        <viewControllerLayoutGuide type="bottom" id="yiK-dH-0e6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="teo-0M-OGS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sn-0e-gFB">
+                                <rect key="frame" x="166" y="92" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="2sn-0e-gFB" firstAttribute="top" secondItem="Pmr-OM-9b7" secondAttribute="bottom" constant="72" id="FZF-fd-MIg"/>
+                            <constraint firstItem="2sn-0e-gFB" firstAttribute="centerX" secondItem="teo-0M-OGS" secondAttribute="centerX" id="g58-Cr-9rb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="identifierLabel" destination="2sn-0e-gFB" id="5WT-fY-xw7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfS-ls-Wn2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="313"/>
         </scene>
     </scenes>
     <resources>

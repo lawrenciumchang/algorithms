@@ -44,4 +44,16 @@ class PermutationsViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
+    func tableView(_ permutationsTable: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ShowPermutationsDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowPermutationsDetail" ,
+            let nextScene = segue.destination as? PermutationsDetailViewController ,
+            let indexPath = self.permutationsTable.indexPathForSelectedRow {
+                nextScene.identifier = indexPath.row
+            }
+    }
+    
 }
