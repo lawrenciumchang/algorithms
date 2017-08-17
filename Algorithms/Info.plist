@@ -42,5 +42,40 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Timer</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>timer</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>first</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>F2L</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>f2l</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>second</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Orientations</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>orientations</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>o1.gif</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Permutations</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>permutations</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>p1.gif</string>
+		</dict>
+	</array>
 </dict>
 </plist>

@@ -13,10 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
+    }
+    
+    // Used for 3D Touch App Icon shortcuts
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        guard let type = Constants.TouchActions(rawValue: shortcutItem.type) else {
+            completionHandler(false)
+            return
+        }
+        let selectedIndex = type.number
+        (window?.rootViewController as? UITabBarController)?.selectedIndex = selectedIndex
+        completionHandler(true)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -40,7 +50,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
 }
 

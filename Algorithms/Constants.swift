@@ -17,4 +17,24 @@ class Constants {
         case permutations = 3
     }
     
+    enum TouchActions: String {
+        case timer = "timer"
+        case f2l = "f2l"
+        case orientations = "orientations"
+        case permutations = "permutations"
+        
+        var number: Int {
+            switch  self {
+                case .timer:
+                    return TabBarScreens.timer.rawValue
+                case .f2l:
+                    return TabBarScreens.f2l.rawValue
+                case .orientations:
+                    return TabBarScreens.orientations.rawValue
+                case .permutations:
+                    return TabBarScreens.permutations.rawValue
+            }
+        }
+    }
+    
 }
