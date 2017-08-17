@@ -14,14 +14,8 @@ class OrientationsViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var permutationsTable: UITableView!
     
-    var dataList:[(String,String)] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        dataList.append(("o1.gif","a) R U2 R2 F R F' U2 R' F R F' \nb) R U2 R2 y' x' (R U R') x y U2 R' y (L' F L')"))
-        dataList.append(("o2.gif", "a) F' L' U' L U F B' U' R' U R B \nb) (F') (L' U' L U) (F) (f') (L' U' L U) (f)"))
-        
         permutationsTable.delegate = self
         permutationsTable.dataSource = self
         
@@ -40,13 +34,13 @@ class OrientationsViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataList.count
+        return Orientations.count
     }
     
     func tableView(_ permutationsTable: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = permutationsTable.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
-        cell.cubeImage.image = UIImage(named: dataList[indexPath.row].0)
-        cell.solutionLabel.text = dataList[indexPath.row].1
+        cell.cubeImage.image = UIImage(named: Orientations.dataList[indexPath.row].0)
+        cell.solutionLabel.text = Orientations.dataList[indexPath.row].1
         return cell
     }
     
