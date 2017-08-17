@@ -12,14 +12,14 @@ class OrientationsViewController: UIViewController, UITableViewDataSource, UITab
     
     @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var permutationsTable: UITableView!
+    @IBOutlet weak var orientationsTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        permutationsTable.delegate = self
-        permutationsTable.dataSource = self
+        orientationsTable.delegate = self
+        orientationsTable.dataSource = self
         
-        permutationsTable.contentInset = UIEdgeInsetsMake(80, 0, 0, 0)
+        orientationsTable.contentInset = UIEdgeInsetsMake(80, 0, 0, 0)
         
         let blurEffect = UIBlurEffect(style: .regular)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
@@ -37,11 +37,23 @@ class OrientationsViewController: UIViewController, UITableViewDataSource, UITab
         return Orientations.count
     }
     
-    func tableView(_ permutationsTable: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = permutationsTable.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
+    func tableView(_ orientationsTable: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = orientationsTable.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
         cell.cubeImage.image = UIImage(named: Orientations.dataList[indexPath.row].0)
         cell.solutionLabel.text = Orientations.dataList[indexPath.row].1
         return cell
+    }
+    
+    func tableView(_ orientationsTable: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ShowOrientationsDetail", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowOrientationsDetail" ,
+            let nextScene = segue.destination as? OrientationsDetailViewController ,
+            let indexPath = self.orientationsTable.indexPathForSelectedRow {
+            nextScene.identifier = indexPath.row
+        }
     }
     
 }

@@ -137,6 +137,7 @@
 		8B535C5B1F42316C00DE9B68 /* OrientationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C5A1F42316C00DE9B68 /* OrientationsViewController.swift */; };
 		8B535C5D1F42317800DE9B68 /* Orientations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C5C1F42317800DE9B68 /* Orientations.storyboard */; };
 		8BB2A8801F461ADC0075EBA3 /* PermutationsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB2A87F1F461ADC0075EBA3 /* PermutationsDetailViewController.swift */; };
+		8BB2A8821F462B590075EBA3 /* OrientationsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB2A8811F462B590075EBA3 /* OrientationsDetailViewController.swift */; };
 		8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */; };
 		8BEC8BCE1F41F08A00D26EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -272,6 +273,7 @@
 		8B535C5A1F42316C00DE9B68 /* OrientationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationsViewController.swift; sourceTree = "<group>"; };
 		8B535C5C1F42317800DE9B68 /* Orientations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Orientations.storyboard; sourceTree = "<group>"; };
 		8BB2A87F1F461ADC0075EBA3 /* PermutationsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermutationsDetailViewController.swift; sourceTree = "<group>"; };
+		8BB2A8811F462B590075EBA3 /* OrientationsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationsDetailViewController.swift; sourceTree = "<group>"; };
 		8BEC8BC11F41F08A00D26EF0 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -517,6 +519,7 @@
 			children = (
 				8B535C5C1F42317800DE9B68 /* Orientations.storyboard */,
 				8B535C5A1F42316C00DE9B68 /* OrientationsViewController.swift */,
+				8BB2A8811F462B590075EBA3 /* OrientationsDetailViewController.swift */,
 			);
 			name = Orientations;
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 				8BB2A8801F461ADC0075EBA3 /* PermutationsDetailViewController.swift in Sources */,
 				8B535C591F42316500DE9B68 /* F2LViewController.swift in Sources */,
 				8B535C481F42285300DE9B68 /* MainTabBarViewController.swift in Sources */,
+				8BB2A8821F462B590075EBA3 /* OrientationsDetailViewController.swift in Sources */,
 				8B535C4A1F4228DB00DE9B68 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

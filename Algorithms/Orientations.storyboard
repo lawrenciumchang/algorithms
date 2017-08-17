@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Permutations-->
+        <!--Orientations-->
         <scene sceneID="RMG-MQ-LfQ">
             <objects>
-                <navigationController navigationBarHidden="YES" id="8eU-BT-vMS" userLabel="Permutations" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="8eU-BT-vMS" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Orientations" image="second" id="A6b-tD-9ue"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-663" y="315"/>
         </scene>
-        <!--Permutations View Controller-->
+        <!--Orientations View Controller-->
         <scene sceneID="6XM-8m-SuW">
             <objects>
-                <viewController id="H1o-Ik-SZb" userLabel="Permutations View Controller" customClass="OrientationsViewController" customModule="Algorithms" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H1o-Ik-SZb" userLabel="Orientations View Controller" customClass="OrientationsViewController" customModule="Algorithms" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BZi-3E-ZHd"/>
                         <viewControllerLayoutGuide type="bottom" id="9Hr-MG-uTT"/>
@@ -46,11 +46,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="82" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="110" id="Hho-9b-NG3" customClass="CustomTableViewCell" customModule="Algorithms" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="110" id="Hho-9b-NG3" customClass="CustomTableViewCell" customModule="Algorithms" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hho-9b-NG3" id="zp5-F3-YXq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-zR-NOK">
@@ -110,17 +110,51 @@
                             <constraint firstItem="Eb4-Fe-IV7" firstAttribute="top" secondItem="gLr-Wc-uRV" secondAttribute="top" id="xpd-vX-GdJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Permutations" id="nzU-Gq-e7h"/>
+                    <navigationItem key="navigationItem" title="Permutations" id="nzU-Gq-e7h" userLabel="Orientations"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="permutationsTable" destination="Eb4-Fe-IV7" id="kKV-gU-7WA"/>
+                        <outlet property="orientationsTable" destination="Eb4-Fe-IV7" id="72e-wZ-uTh"/>
                         <outlet property="titleLabel" destination="bCt-fk-D9d" id="n6m-n8-CsE"/>
                         <outlet property="titleView" destination="mTV-Tb-vxt" id="i3v-cg-jMG"/>
+                        <segue destination="Wcf-8O-oyX" kind="show" identifier="ShowOrientationsDetail" id="sWs-Ye-rAO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F49-gw-TJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="149.59999999999999" y="313.49325337331339"/>
+        </scene>
+        <!--Orientations Detail View Controller-->
+        <scene sceneID="BLi-6X-ybp">
+            <objects>
+                <viewController id="Wcf-8O-oyX" customClass="OrientationsDetailViewController" customModule="Algorithms" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8uw-uD-EQt"/>
+                        <viewControllerLayoutGuide type="bottom" id="19l-8F-jXd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DZy-sn-KdG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InC-D1-dV4">
+                                <rect key="frame" x="166" y="62" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="InC-D1-dV4" firstAttribute="centerX" secondItem="DZy-sn-KdG" secondAttribute="centerX" id="EP9-7S-wrm"/>
+                            <constraint firstItem="InC-D1-dV4" firstAttribute="top" secondItem="8uw-uD-EQt" secondAttribute="bottom" constant="42" id="RFP-Ql-P7g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testLabel" destination="InC-D1-dV4" id="BjP-0Z-tRO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0C-Hj-z7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911" y="314"/>
         </scene>
     </scenes>
     <resources>
