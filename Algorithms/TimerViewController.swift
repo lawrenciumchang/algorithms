@@ -15,10 +15,11 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var labelSecond: UILabel!
     @IBOutlet weak var labelMillisecond: UILabel!
     
-    @IBOutlet weak var startBtn: UIButton!
+    @IBOutlet weak var panel1: UIView!
+    @IBOutlet weak var panel2: UIView!
+    @IBOutlet weak var panel3: UIView!
     
     @IBOutlet weak var timerBtn1: UIButton!
-    @IBOutlet weak var timerBtn2: UIButton!
     
     weak var timer: Timer?
     var startTime: Double = 0
@@ -30,18 +31,9 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
         
         timerBtn1.layer.cornerRadius = 4
-        timerBtn2.layer.cornerRadius = 4
-    }
-    
-    @IBAction func toggleStartStop(_ sender: UIButton) {
-        if (isTimerRunning) {
-            stop()
-            sender.setTitle("Start", for: .normal)
-        } else {
-            reset()
-            start()
-            sender.setTitle("Stop", for: .normal)
-        }
+        panel1.layer.cornerRadius = 4
+        panel2.layer.cornerRadius = 4
+        panel3.layer.cornerRadius = 4
     }
     
     func start() {
@@ -98,21 +90,18 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func timerBtn1Touched(_ sender: UIButton) {
-        UIImpactFeedbackGenerator(style: .light).impactOccurred()
         timerBtn1.backgroundColor = getColorByHex(rgbHexValue: 0x6375e5, alpha: 1)
     }
     
     @IBAction func timerBtn1Released(_ sender: UIButton) {
-        timerBtn1.backgroundColor = getColorByHex(rgbHexValue: 0x6E82FF, alpha: 1)
-    }
-    
-    @IBAction func timerBtn2Touched(_ sender: UIButton) {
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
-        timerBtn2.backgroundColor = getColorByHex(rgbHexValue: 0x6375e5, alpha: 1)
-    }
-    
-    @IBAction func timerBtn2Released(_ sender: UIButton) {
-        timerBtn2.backgroundColor = getColorByHex(rgbHexValue: 0x6E82FF, alpha: 1)
+        timerBtn1.backgroundColor = getColorByHex(rgbHexValue: 0x6E82FF, alpha: 1)
+        if (isTimerRunning) {
+            stop()
+        } else {
+            reset()
+            start()
+        }
     }
     
 }
