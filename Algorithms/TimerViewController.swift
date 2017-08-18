@@ -24,7 +24,7 @@ class TimerViewController: UIViewController {
     var startTime: Double = 0
     var time: Double = 0
     var elapsed: Double = 0
-    var status: Bool = false
+    var isTimerRunning: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func toggleStartStop(_ sender: UIButton) {
-        if (status) {
+        if (isTimerRunning) {
             stop()
             sender.setTitle("Start", for: .normal)
         } else {
@@ -47,15 +47,13 @@ class TimerViewController: UIViewController {
     func start() {
         startTime = Date().timeIntervalSinceReferenceDate - elapsed
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-        // Set Start/Stop button to true
-        status = true
+        isTimerRunning = true
     }
     
     func stop() {
         elapsed = Date().timeIntervalSinceReferenceDate - startTime
         timer?.invalidate()
-        // Set Start/Stop button to false
-        status = false
+        isTimerRunning = false
     }
     
     func reset() {
@@ -63,7 +61,7 @@ class TimerViewController: UIViewController {
         startTime = 0
         time = 0
         elapsed = 0
-        status = false
+        isTimerRunning = false
         let strReset = String("00")
         labelMinute.text = strReset
         labelSecond.text = strReset
