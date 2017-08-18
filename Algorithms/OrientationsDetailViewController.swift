@@ -13,13 +13,15 @@ class OrientationsDetailViewController: UIViewController {
     var identifier: Int = 0
     
     @IBOutlet weak var cubeImage: UIImageView!
-    @IBOutlet weak var solutionLabel: UILabel!
+    @IBOutlet weak var solutionLabelA: UILabel!
+    @IBOutlet weak var solutionLabelB: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         cubeImage.image = UIImage(named: Orientations.dataList[identifier].0)
-        solutionLabel.text = Orientations.dataList[identifier].1
+        solutionLabelA.text = Orientations.dataList[identifier].2
+        solutionLabelB.text = Orientations.dataList[identifier].3
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(performSegueToReturnBack))
         swipeRight.direction = .right
