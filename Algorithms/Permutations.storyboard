@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -159,14 +161,47 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v94-da-mbA">
+                                        <rect key="frame" x="20" y="336" width="160" height="42"/>
+                                        <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="zSF-Ic-1xe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="In Progress">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="inProgressBtnClicked:" destination="8vu-yA-dOC" eventType="touchUpInside" id="i7m-yW-hEy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lk-Vs-mKP">
+                                        <rect key="frame" x="195" y="336" width="160" height="42"/>
+                                        <color key="backgroundColor" red="0.35756117599999998" green="0.4048585938" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Completed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="completedBtnClicked:" destination="8vu-yA-dOC" eventType="touchUpInside" id="gWz-U9-5fv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97647058823529409" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="vy1-Wf-RmZ" firstAttribute="top" secondItem="625-vG-rdr" secondAttribute="bottom" constant="15.5" id="2WF-OZ-gfG"/>
                                     <constraint firstItem="vy1-Wf-RmZ" firstAttribute="leading" secondItem="38b-WQ-J4i" secondAttribute="leading" constant="32" id="Cmx-Us-88R"/>
+                                    <constraint firstItem="v94-da-mbA" firstAttribute="width" secondItem="8lk-Vs-mKP" secondAttribute="width" id="Gh4-Pb-4EE"/>
                                     <constraint firstAttribute="trailing" secondItem="vy1-Wf-RmZ" secondAttribute="trailing" constant="32" id="HQb-0z-Lfy"/>
+                                    <constraint firstAttribute="trailing" secondItem="8lk-Vs-mKP" secondAttribute="trailing" constant="20" id="SIy-nP-nXC"/>
+                                    <constraint firstItem="v94-da-mbA" firstAttribute="top" secondItem="8lk-Vs-mKP" secondAttribute="top" id="Si3-UX-E1c"/>
+                                    <constraint firstAttribute="bottom" secondItem="v94-da-mbA" secondAttribute="bottom" constant="32" id="USQ-lQ-VZW"/>
+                                    <constraint firstItem="v94-da-mbA" firstAttribute="firstBaseline" secondItem="8lk-Vs-mKP" secondAttribute="baseline" id="V79-3f-Y05"/>
+                                    <constraint firstItem="v94-da-mbA" firstAttribute="leading" secondItem="38b-WQ-J4i" secondAttribute="leading" constant="20" id="VVG-Ue-Y1W"/>
                                     <constraint firstItem="625-vG-rdr" firstAttribute="leading" secondItem="nn0-o5-Uiv" secondAttribute="leading" id="amK-5l-evf"/>
                                     <constraint firstItem="nn0-o5-Uiv" firstAttribute="leading" secondItem="38b-WQ-J4i" secondAttribute="leading" constant="24" id="ea0-zp-Mrd"/>
+                                    <constraint firstItem="8lk-Vs-mKP" firstAttribute="leading" secondItem="v94-da-mbA" secondAttribute="trailing" constant="15" id="fCL-Kv-Nfc"/>
+                                    <constraint firstItem="v94-da-mbA" firstAttribute="baseline" secondItem="8lk-Vs-mKP" secondAttribute="firstBaseline" id="gl2-jB-TkH"/>
                                     <constraint firstItem="625-vG-rdr" firstAttribute="top" secondItem="nn0-o5-Uiv" secondAttribute="bottom" constant="2" id="hAr-dS-jkd"/>
                                     <constraint firstItem="nn0-o5-Uiv" firstAttribute="top" secondItem="38b-WQ-J4i" secondAttribute="top" constant="32" id="l2a-L0-qoQ"/>
                                     <constraint firstAttribute="trailing" secondItem="625-vG-rdr" secondAttribute="trailing" id="p2C-A3-FQH"/>
@@ -188,8 +223,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="completedBtn" destination="8lk-Vs-mKP" id="raJ-g1-P61"/>
                         <outlet property="cubeImage" destination="2oT-Cd-TYa" id="025-6M-CRa"/>
                         <outlet property="headerLabel" destination="nn0-o5-Uiv" id="NLv-4r-RDA"/>
+                        <outlet property="inProgressBtn" destination="v94-da-mbA" id="n9N-u1-USi"/>
                         <outlet property="solutionLabel" destination="vy1-Wf-RmZ" id="GxZ-Xx-3sU"/>
                     </connections>
                 </viewController>

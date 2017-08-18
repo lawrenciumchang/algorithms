@@ -15,12 +15,17 @@ class PermutationsDetailViewController: UIViewController {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var cubeImage: UIImageView!
     @IBOutlet weak var solutionLabel: UILabel!
+    @IBOutlet weak var inProgressBtn: UIButton!
+    @IBOutlet weak var completedBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         cubeImage.image = UIImage(named: Permutations.dataList[identifier].0)
         solutionLabel.text = Permutations.dataList[identifier].1
+        
+        inProgressBtn.layer.cornerRadius = 4
+        completedBtn.layer.cornerRadius = 4
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(performSegueToReturnBack))
         swipeRight.direction = .right
@@ -33,6 +38,14 @@ class PermutationsDetailViewController: UIViewController {
         } else {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func inProgressBtnClicked(_ sender: Any) {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    }
+    
+    @IBAction func completedBtnClicked(_ sender: Any) {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
     }
     
 }
