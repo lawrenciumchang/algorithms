@@ -12,6 +12,7 @@ class PermutationsDetailViewController: UIViewController {
 
     var identifier: Int = 0
     
+    @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var cubeImage: UIImageView!
     @IBOutlet weak var solutionLabel: UILabel!
     

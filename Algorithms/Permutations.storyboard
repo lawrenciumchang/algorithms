@@ -143,19 +143,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38b-WQ-J4i">
                                 <rect key="frame" x="0.0" y="208" width="375" height="410"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="solutionLabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy1-Wf-RmZ">
-                                        <rect key="frame" x="40" y="20" width="295" height="29"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn0-o5-Uiv">
+                                        <rect key="frame" x="24" y="32" width="63" height="21"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="625-vG-rdr" userLabel="divider">
+                                        <rect key="frame" x="24" y="55" width="351" height="0.0"/>
+                                        <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="solutionLabel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy1-Wf-RmZ">
+                                        <rect key="frame" x="32" y="70" width="311" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901960784312" green="0.97647058823529409" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="vy1-Wf-RmZ" secondAttribute="bottom" constant="361" id="2gl-uf-fGj"/>
-                                    <constraint firstItem="vy1-Wf-RmZ" firstAttribute="top" secondItem="38b-WQ-J4i" secondAttribute="top" constant="20" id="CjY-Jh-Kkp"/>
-                                    <constraint firstItem="vy1-Wf-RmZ" firstAttribute="leading" secondItem="38b-WQ-J4i" secondAttribute="leading" constant="40" id="ZyO-GB-nfx"/>
-                                    <constraint firstAttribute="trailing" secondItem="vy1-Wf-RmZ" secondAttribute="trailing" constant="40" id="cbd-Ag-zY7"/>
+                                    <constraint firstItem="vy1-Wf-RmZ" firstAttribute="top" secondItem="625-vG-rdr" secondAttribute="bottom" constant="15.5" id="2WF-OZ-gfG"/>
+                                    <constraint firstItem="vy1-Wf-RmZ" firstAttribute="leading" secondItem="38b-WQ-J4i" secondAttribute="leading" constant="32" id="Cmx-Us-88R"/>
+                                    <constraint firstAttribute="trailing" secondItem="vy1-Wf-RmZ" secondAttribute="trailing" constant="32" id="HQb-0z-Lfy"/>
+                                    <constraint firstItem="625-vG-rdr" firstAttribute="leading" secondItem="nn0-o5-Uiv" secondAttribute="leading" id="amK-5l-evf"/>
+                                    <constraint firstItem="nn0-o5-Uiv" firstAttribute="leading" secondItem="38b-WQ-J4i" secondAttribute="leading" constant="24" id="ea0-zp-Mrd"/>
+                                    <constraint firstItem="625-vG-rdr" firstAttribute="top" secondItem="nn0-o5-Uiv" secondAttribute="bottom" constant="2" id="hAr-dS-jkd"/>
+                                    <constraint firstItem="nn0-o5-Uiv" firstAttribute="top" secondItem="38b-WQ-J4i" secondAttribute="top" constant="32" id="l2a-L0-qoQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="625-vG-rdr" secondAttribute="trailing" id="p2C-A3-FQH"/>
+                                    <constraint firstItem="vy1-Wf-RmZ" firstAttribute="top" secondItem="38b-WQ-J4i" secondAttribute="top" constant="70" id="scr-d9-DIM"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -174,6 +189,7 @@
                     </view>
                     <connections>
                         <outlet property="cubeImage" destination="2oT-Cd-TYa" id="025-6M-CRa"/>
+                        <outlet property="headerLabel" destination="nn0-o5-Uiv" id="NLv-4r-RDA"/>
                         <outlet property="solutionLabel" destination="vy1-Wf-RmZ" id="GxZ-Xx-3sU"/>
                     </connections>
                 </viewController>
