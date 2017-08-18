@@ -48,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-YN-fT0">
-                                <rect key="frame" x="8" y="287" width="359" height="320"/>
+                                <rect key="frame" x="8" y="285" width="359" height="320"/>
                                 <color key="backgroundColor" red="0.35686274509803922" green="0.40392156862745099" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="6Yc-Ej-8lk"/>
@@ -92,31 +92,31 @@
                         <constraints>
                             <constraint firstItem="MtG-ph-Ff3" firstAttribute="leading" secondItem="hbF-Cl-Zb1" secondAttribute="leadingMargin" constant="2" id="0NC-be-dmu"/>
                             <constraint firstItem="8LV-zD-ZjN" firstAttribute="leading" secondItem="rI6-w3-mnz" secondAttribute="trailing" id="0Y4-yM-l6G"/>
-                            <constraint firstItem="EX4-Nb-gWr" firstAttribute="top" secondItem="gTy-YN-fT0" secondAttribute="bottom" constant="11" id="2Aj-3R-mOo"/>
+                            <constraint firstItem="EX4-Nb-gWr" firstAttribute="top" secondItem="gTy-YN-fT0" secondAttribute="bottom" constant="13" id="2Aj-3R-mOo"/>
                             <constraint firstItem="8LV-zD-ZjN" firstAttribute="width" secondItem="rI6-w3-mnz" secondAttribute="width" id="3Lf-ZF-pxj"/>
                             <constraint firstItem="qMl-W7-U9m" firstAttribute="trailing" secondItem="hbF-Cl-Zb1" secondAttribute="trailingMargin" id="3y5-Ft-Z68"/>
                             <constraint firstItem="MtG-ph-Ff3" firstAttribute="top" secondItem="n0B-fQ-QDe" secondAttribute="top" id="7WB-Kg-H5H"/>
                             <constraint firstItem="n0B-fQ-QDe" firstAttribute="leading" secondItem="MtG-ph-Ff3" secondAttribute="trailing" constant="4" id="7lw-LJ-voU"/>
-                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="n0B-fQ-QDe" secondAttribute="bottom" constant="42" id="C8v-44-BgT"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="n0B-fQ-QDe" secondAttribute="bottom" constant="40" id="C8v-44-BgT"/>
                             <constraint firstItem="8LV-zD-ZjN" firstAttribute="width" secondItem="bNO-0E-ZHY" secondAttribute="width" id="LKT-VG-Qmj"/>
                             <constraint firstItem="Zgf-2D-xaC" firstAttribute="leading" secondItem="n0B-fQ-QDe" secondAttribute="trailing" constant="4" id="Mpv-Cv-e2D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bNO-0E-ZHY" secondAttribute="trailing" id="Q6O-v2-kLS"/>
                             <constraint firstItem="MtG-ph-Ff3" firstAttribute="top" secondItem="Zgf-2D-xaC" secondAttribute="top" id="R8V-VK-FYv"/>
                             <constraint firstItem="rI6-w3-mnz" firstAttribute="leading" secondItem="hbF-Cl-Zb1" secondAttribute="leadingMargin" id="SOa-bL-2sW"/>
                             <constraint firstItem="MtG-ph-Ff3" firstAttribute="centerX" secondItem="rI6-w3-mnz" secondAttribute="centerX" id="Ufc-us-SrL"/>
-                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="rI6-w3-mnz" secondAttribute="bottom" constant="63" id="VpP-tS-yoK"/>
-                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="MtG-ph-Ff3" secondAttribute="bottom" constant="42" id="WgI-8h-4Rh"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="rI6-w3-mnz" secondAttribute="bottom" constant="61" id="VpP-tS-yoK"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="MtG-ph-Ff3" secondAttribute="bottom" constant="40" id="WgI-8h-4Rh"/>
                             <constraint firstItem="qMl-W7-U9m" firstAttribute="leading" secondItem="hbF-Cl-Zb1" secondAttribute="leadingMargin" id="X77-15-WcI"/>
                             <constraint firstItem="gTy-YN-fT0" firstAttribute="leading" secondItem="hbF-Cl-Zb1" secondAttribute="leadingMargin" constant="-8" id="XuK-dL-em8"/>
-                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="Zgf-2D-xaC" secondAttribute="bottom" constant="42" id="bAY-w1-h50"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="Zgf-2D-xaC" secondAttribute="bottom" constant="40" id="bAY-w1-h50"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gTy-YN-fT0" secondAttribute="trailing" constant="-8" id="cKJ-Hc-d8w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zgf-2D-xaC" secondAttribute="trailing" constant="2" id="efx-wf-wNc"/>
-                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="8LV-zD-ZjN" secondAttribute="bottom" constant="63" id="hPF-7W-dV5"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="8LV-zD-ZjN" secondAttribute="bottom" constant="61" id="hPF-7W-dV5"/>
                             <constraint firstItem="qMl-W7-U9m" firstAttribute="top" secondItem="hbF-Cl-Zb1" secondAttribute="topMargin" constant="46" id="nfT-hb-3Vj"/>
                             <constraint firstItem="bNO-0E-ZHY" firstAttribute="leading" secondItem="8LV-zD-ZjN" secondAttribute="trailing" constant="5" id="o5m-lN-2wK"/>
                             <constraint firstItem="n0B-fQ-QDe" firstAttribute="centerX" secondItem="qMl-W7-U9m" secondAttribute="centerX" id="oCv-Ka-O0a"/>
                             <constraint firstItem="MtG-ph-Ff3" firstAttribute="centerY" secondItem="rI6-w3-mnz" secondAttribute="centerY" id="oxY-k4-p8f"/>
-                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="bNO-0E-ZHY" secondAttribute="bottom" constant="63" id="w2Y-H8-jqA"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="bNO-0E-ZHY" secondAttribute="bottom" constant="61" id="w2Y-H8-jqA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Timer" id="eeN-TH-Ibc"/>
