@@ -15,6 +15,8 @@ class OrientationsDetailViewController: UIViewController {
     @IBOutlet weak var cubeImage: UIImageView!
     @IBOutlet weak var solutionLabelA: UILabel!
     @IBOutlet weak var solutionLabelB: UILabel!
+    @IBOutlet weak var inProgressBtn: UIButton!
+    @IBOutlet weak var completedBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,9 @@ class OrientationsDetailViewController: UIViewController {
         cubeImage.image = UIImage(named: Orientations.dataList[identifier].0)
         solutionLabelA.text = Orientations.dataList[identifier].2
         solutionLabelB.text = Orientations.dataList[identifier].3
+        
+        inProgressBtn.layer.cornerRadius = 4
+        completedBtn.layer.cornerRadius = 4
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(performSegueToReturnBack))
         swipeRight.direction = .right
@@ -34,6 +39,14 @@ class OrientationsDetailViewController: UIViewController {
         } else {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func inProgressBtnClicked(_ sender: Any) {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+    }
+    
+    @IBAction func completedBtnClicked(_ sender: Any) {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
     }
     
 }

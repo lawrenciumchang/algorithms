@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +19,7 @@
                     <tabBarItem key="tabBarItem" title="Orientations" image="second" id="A6b-tD-9ue"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pVm-up-6JC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pVm-up-6JC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -167,7 +169,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b0F-5s-eWM" userLabel="divider">
-                                        <rect key="frame" x="24" y="182" width="351" height="0.5"/>
+                                        <rect key="frame" x="24" y="182" width="351" height="1"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="solutionLabelB" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="295" translatesAutoresizingMaskIntoConstraints="NO" id="B89-X0-2g3">
@@ -176,20 +178,53 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilN-nQ-J22">
+                                        <rect key="frame" x="20" y="340" width="160" height="42"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="9ma-bX-qb4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="In Progress">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="inProgressBtnClicked:" destination="Wcf-8O-oyX" eventType="touchUpInside" id="nrs-md-pv8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-bx-gQV">
+                                        <rect key="frame" x="195" y="340" width="160" height="42"/>
+                                        <color key="backgroundColor" red="0.35756117599999998" green="0.4048585938" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Completed">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="completedBtnClicked:" destination="Wcf-8O-oyX" eventType="touchUpInside" id="2Yk-QO-NSI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="6uB-CR-mHS" secondAttribute="trailing" id="3fi-LS-Li8"/>
                                     <constraint firstItem="hrm-FI-erZ" firstAttribute="top" secondItem="GZt-Dj-V0r" secondAttribute="top" constant="70" id="5BI-iv-Ucg"/>
                                     <constraint firstItem="VvW-UV-cZT" firstAttribute="top" secondItem="GZt-Dj-V0r" secondAttribute="top" constant="32" id="9aK-O0-NiS"/>
+                                    <constraint firstItem="ilN-nQ-J22" firstAttribute="firstBaseline" secondItem="xe4-bx-gQV" secondAttribute="baseline" id="9ju-Ke-Ucf"/>
+                                    <constraint firstItem="xe4-bx-gQV" firstAttribute="leading" secondItem="ilN-nQ-J22" secondAttribute="trailing" constant="15" id="AW6-L6-Qi2"/>
                                     <constraint firstItem="MDC-5d-DYR" firstAttribute="leading" secondItem="6uB-CR-mHS" secondAttribute="leading" id="CPp-Ue-Lyi"/>
                                     <constraint firstItem="6uB-CR-mHS" firstAttribute="leading" secondItem="VvW-UV-cZT" secondAttribute="leading" id="FBf-aY-3rA"/>
+                                    <constraint firstItem="ilN-nQ-J22" firstAttribute="leading" secondItem="GZt-Dj-V0r" secondAttribute="leading" constant="20" id="K8k-nM-Nhs"/>
+                                    <constraint firstAttribute="bottom" secondItem="ilN-nQ-J22" secondAttribute="bottom" constant="28" id="NNT-08-L5E"/>
                                     <constraint firstItem="b0F-5s-eWM" firstAttribute="top" secondItem="MDC-5d-DYR" secondAttribute="bottom" constant="2" id="NhA-J5-mAR"/>
+                                    <constraint firstItem="ilN-nQ-J22" firstAttribute="baseline" secondItem="xe4-bx-gQV" secondAttribute="firstBaseline" id="P11-Zl-nRS"/>
+                                    <constraint firstItem="ilN-nQ-J22" firstAttribute="top" secondItem="xe4-bx-gQV" secondAttribute="top" id="QA8-vx-9QB"/>
                                     <constraint firstItem="B89-X0-2g3" firstAttribute="top" secondItem="GZt-Dj-V0r" secondAttribute="top" constant="198" id="QFG-xQ-poL"/>
                                     <constraint firstItem="B89-X0-2g3" firstAttribute="top" secondItem="b0F-5s-eWM" secondAttribute="bottom" constant="15.5" id="R7E-Jh-Cd3"/>
+                                    <constraint firstItem="xe4-bx-gQV" firstAttribute="width" secondItem="ilN-nQ-J22" secondAttribute="width" id="STS-hf-fV3"/>
                                     <constraint firstItem="hrm-FI-erZ" firstAttribute="top" secondItem="6uB-CR-mHS" secondAttribute="bottom" constant="15.5" id="Unn-q7-V3U"/>
                                     <constraint firstItem="VvW-UV-cZT" firstAttribute="leading" secondItem="GZt-Dj-V0r" secondAttribute="leading" constant="24" id="bPd-qW-ts4"/>
                                     <constraint firstItem="6uB-CR-mHS" firstAttribute="top" secondItem="VvW-UV-cZT" secondAttribute="bottom" constant="2" id="eQv-nz-3Xx"/>
+                                    <constraint firstAttribute="trailing" secondItem="xe4-bx-gQV" secondAttribute="trailing" constant="20" id="fbo-Qm-VMu"/>
                                     <constraint firstAttribute="trailing" secondItem="b0F-5s-eWM" secondAttribute="trailing" id="fdE-x8-E8e"/>
                                     <constraint firstItem="B89-X0-2g3" firstAttribute="trailing" secondItem="hrm-FI-erZ" secondAttribute="trailing" id="jb4-sh-dfO"/>
                                     <constraint firstItem="hrm-FI-erZ" firstAttribute="leading" secondItem="GZt-Dj-V0r" secondAttribute="leading" constant="32" id="m7Z-qv-Sfj"/>
@@ -212,14 +247,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="completedBtn" destination="xe4-bx-gQV" id="60p-ky-V4U"/>
                         <outlet property="cubeImage" destination="s8Q-NB-Gug" id="eN9-ea-dhR"/>
+                        <outlet property="inProgressBtn" destination="ilN-nQ-J22" id="EMr-Nh-sNw"/>
                         <outlet property="solutionLabelA" destination="hrm-FI-erZ" id="1I0-g1-ZIq"/>
                         <outlet property="solutionLabelB" destination="B89-X0-2g3" id="2Ln-UD-HWo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0C-Hj-z7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909.5" y="312.5"/>
+            <point key="canvasLocation" x="908" y="311.69415292353824"/>
         </scene>
     </scenes>
     <resources>
