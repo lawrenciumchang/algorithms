@@ -79,7 +79,7 @@ class Orientations {
             "o10.gif",
             "Aa) L U F U' F' U F U' F' L' \nAb) (L d) (R U') (R' U) (R U' R') y L' \nBa) R' U' F' U F U' F' U F R \nBb) (R' d') (L' U) (L U') (L' U L) y' R",
             "a) L U F U' F' U F U' F' L' \nb) (L d) (R U') (R' U) (R U' R') y L'",
-            "b) R' U' F' U F U' F' U F R \nb) (R' d') (L' U) (L U') (L' U L) y' R"
+            "a) R' U' F' U F U' F' U F R \nb) (R' d') (L' U) (L U') (L' U L) y' R"
         ),
         (
             "o11.gif",
