@@ -41,25 +41,25 @@ class Permutations {
         (   "p6.gif", 
             "(U' L²) (D F²) (D' L²) \nB² (D' R²) (D B²)"
         ),
-        (   "p6.gif", 
+        (   "p7.gif",
             "(R' U R' U') (B' D B' D' B²) \n(R' B' R B R)"
         ),
-        (   "p7.gif", 
+        (   "p8.gif",
             "(L² F' L) D² (R' B R) D² \nL B (L F L' B')"
         ),
-        (   "p8.gif", 
+        (   "p9.gif",
             "U' B' U² B U' (R' F R) \nB' (R' F' R) (U' B)"
         ),
-        (   "p9.gif", 
+        (   "p10.gif",
             "B² (L U L') B² (R D' R D R²)"
         ),
-        (   "p10.gif", 
+        (   "p11.gif",
             "R B U' (B' R D) B' \n(L' B' L) B² (D' R²)"
         ),
-        (   "p11.gif", 
+        (   "p12.gif",
             "(F U F') L² D' \n((B U') (B' U B')) (D L²)"
         ),
-        (   "p12.gif", 
+        (   "p12b.gif", 
             "L² D' (B U' B U B') \n(D L²) (F U' F')"
         ),
         (   "p13.gif", 
