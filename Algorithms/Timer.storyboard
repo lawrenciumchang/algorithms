@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,21 +43,93 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMl-W7-U9m">
-                                <rect key="frame" x="16" y="46" width="343" height="45.5"/>
+                                <rect key="frame" x="16" y="46" width="343" height="46"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-YN-fT0">
+                                <rect key="frame" x="8" y="328" width="175.5" height="280"/>
+                                <color key="backgroundColor" red="0.35686274509803922" green="0.40392156862745099" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="6Yc-Ej-8lk"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timerBtn1Released:" destination="mI3-Ht-Reg" eventType="touchUpInside" id="8Ot-HZ-FwE"/>
+                                    <action selector="timerBtn1Touched:" destination="mI3-Ht-Reg" eventType="touchDown" id="SA1-vl-EeI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSw-dv-Dcq">
+                                <rect key="frame" x="191.5" y="328" width="175.5" height="280"/>
+                                <color key="backgroundColor" red="0.35756117599999998" green="0.4048585938" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="timerBtn2Released:" destination="mI3-Ht-Reg" eventType="touchUpInside" id="YE3-Rk-IhR"/>
+                                    <action selector="timerBtn2Touched:" destination="mI3-Ht-Reg" eventType="touchDown" id="ycJ-Fv-wdm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LV-zD-ZjN">
+                                <rect key="frame" x="136.5" y="148" width="107" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNO-0E-ZHY">
+                                <rect key="frame" x="238.5" y="148" width="106.5" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rI6-w3-mnz">
+                                <rect key="frame" x="30" y="148" width="106.5" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lq0-h2-wPk">
+                                <rect key="frame" x="170" y="275" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="toggleStartStop:" destination="mI3-Ht-Reg" eventType="touchUpInside" id="NZJ-Rq-uDn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8LV-zD-ZjN" firstAttribute="leading" secondItem="rI6-w3-mnz" secondAttribute="trailing" id="0Y4-yM-l6G"/>
+                            <constraint firstItem="EX4-Nb-gWr" firstAttribute="top" secondItem="gTy-YN-fT0" secondAttribute="bottom" constant="10" id="2Aj-3R-mOo"/>
+                            <constraint firstItem="8LV-zD-ZjN" firstAttribute="width" secondItem="rI6-w3-mnz" secondAttribute="width" id="3Lf-ZF-pxj"/>
                             <constraint firstItem="qMl-W7-U9m" firstAttribute="trailing" secondItem="hbF-Cl-Zb1" secondAttribute="trailingMargin" id="3y5-Ft-Z68"/>
+                            <constraint firstItem="iSw-dv-Dcq" firstAttribute="firstBaseline" secondItem="gTy-YN-fT0" secondAttribute="firstBaseline" id="5Uy-uX-Kf3"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="top" secondItem="iSw-dv-Dcq" secondAttribute="top" id="8Ue-OI-6Xr"/>
+                            <constraint firstItem="iSw-dv-Dcq" firstAttribute="baseline" secondItem="gTy-YN-fT0" secondAttribute="baseline" id="EdG-lZ-SZR"/>
+                            <constraint firstItem="8LV-zD-ZjN" firstAttribute="top" secondItem="qMl-W7-U9m" secondAttribute="bottom" constant="56" id="FRn-3S-A8x"/>
+                            <constraint firstItem="bNO-0E-ZHY" firstAttribute="top" secondItem="qMl-W7-U9m" secondAttribute="bottom" constant="56" id="I4u-kV-spJ"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="width" secondItem="iSw-dv-Dcq" secondAttribute="width" id="IJh-Id-z5a"/>
+                            <constraint firstItem="iSw-dv-Dcq" firstAttribute="leading" secondItem="gTy-YN-fT0" secondAttribute="trailing" constant="8" id="KMz-uc-GZI"/>
+                            <constraint firstItem="8LV-zD-ZjN" firstAttribute="width" secondItem="bNO-0E-ZHY" secondAttribute="width" id="LKT-VG-Qmj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bNO-0E-ZHY" secondAttribute="trailing" constant="14" id="Q6O-v2-kLS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iSw-dv-Dcq" secondAttribute="trailing" constant="-8" id="QeK-AH-P9u"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="bottom" secondItem="iSw-dv-Dcq" secondAttribute="bottom" id="Qqf-lN-5wm"/>
+                            <constraint firstItem="rI6-w3-mnz" firstAttribute="leading" secondItem="hbF-Cl-Zb1" secondAttribute="leadingMargin" constant="14" id="SOa-bL-2sW"/>
                             <constraint firstItem="qMl-W7-U9m" firstAttribute="leading" secondItem="hbF-Cl-Zb1" secondAttribute="leadingMargin" id="X77-15-WcI"/>
+                            <constraint firstItem="gTy-YN-fT0" firstAttribute="leading" secondItem="hbF-Cl-Zb1" secondAttribute="leadingMargin" constant="-8" id="XuK-dL-em8"/>
+                            <constraint firstItem="rI6-w3-mnz" firstAttribute="top" secondItem="qMl-W7-U9m" secondAttribute="bottom" constant="56" id="bMJ-gt-iHq"/>
+                            <constraint firstItem="lq0-h2-wPk" firstAttribute="top" secondItem="qMl-W7-U9m" secondAttribute="bottom" constant="183" id="c96-4Q-2dm"/>
                             <constraint firstItem="qMl-W7-U9m" firstAttribute="top" secondItem="hbF-Cl-Zb1" secondAttribute="topMargin" constant="46" id="nfT-hb-3Vj"/>
+                            <constraint firstItem="bNO-0E-ZHY" firstAttribute="leading" secondItem="8LV-zD-ZjN" secondAttribute="trailing" constant="-5" id="o5m-lN-2wK"/>
+                            <constraint firstItem="lq0-h2-wPk" firstAttribute="centerX" secondItem="hbF-Cl-Zb1" secondAttribute="centerX" id="xtr-Tp-lFh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Timer" id="eeN-TH-Ibc"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="labelMillisecond" destination="bNO-0E-ZHY" id="i6X-Cu-SHv"/>
+                        <outlet property="labelMinute" destination="rI6-w3-mnz" id="dX3-a8-njm"/>
+                        <outlet property="labelSecond" destination="8LV-zD-ZjN" id="agi-af-eqa"/>
+                        <outlet property="startBtn" destination="lq0-h2-wPk" id="y27-zf-bF2"/>
+                        <outlet property="timerBtn1" destination="gTy-YN-fT0" id="erY-mm-Ncr"/>
+                        <outlet property="timerBtn2" destination="iSw-dv-Dcq" id="cdX-Z5-km6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvg-Zx-HF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
