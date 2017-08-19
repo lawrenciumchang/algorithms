@@ -2,7 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "second.pdf"
+      "filename" : "Timer-Icon-Notification@3x.png",
+      "scale" : "3x"
     }
   ],
   "info" : {

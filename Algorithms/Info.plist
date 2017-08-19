@@ -50,7 +50,7 @@
 			<key>UIApplicationShortcutItemType</key>
 			<string>timer</string>
 			<key>UIApplicationShortcutItemIconFile</key>
-			<string>first</string>
+			<string>Timer-Icon-Small</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemTitle</key>
@@ -58,7 +58,7 @@
 			<key>UIApplicationShortcutItemType</key>
 			<string>f2l</string>
 			<key>UIApplicationShortcutItemIconFile</key>
-			<string>second</string>
+			<string>F2L-Icon-Small</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemTitle</key>
@@ -66,7 +66,7 @@
 			<key>UIApplicationShortcutItemType</key>
 			<string>orientations</string>
 			<key>UIApplicationShortcutItemIconFile</key>
-			<string>o1.gif</string>
+			<string>Orientation-Icon-Small</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemTitle</key>
@@ -74,7 +74,7 @@
 			<key>UIApplicationShortcutItemType</key>
 			<string>permutations</string>
 			<key>UIApplicationShortcutItemIconFile</key>
-			<string>p1.gif</string>
+			<string>Permutation-Icon-Small</string>
 		</dict>
 	</array>
 </dict>

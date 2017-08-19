@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pKb-yO-tsn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pKb-yO-tsn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <scene sceneID="qfp-Or-4Mf">
             <objects>
                 <navigationController navigationBarHidden="YES" id="pKb-yO-tsn" userLabel="F2L" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="F2L" image="second" id="joo-zo-a8V"/>
+                    <tabBarItem key="tabBarItem" title="F2L" image="F2L-Icon-Small" id="joo-zo-a8V"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c19-4U-P9f">
@@ -83,6 +83,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="F2L-Icon-Small" width="29" height="29"/>
     </resources>
 </document>

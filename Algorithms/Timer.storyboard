@@ -14,7 +14,7 @@
         <scene sceneID="Hzn-yk-yZy">
             <objects>
                 <navigationController navigationBarHidden="YES" id="A9V-EM-tw1" userLabel="Timer" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Timer" image="first" id="no9-Wz-Woj" userLabel="Timer"/>
+                    <tabBarItem key="tabBarItem" title="Timer" image="Timer-Icon-Small" id="no9-Wz-Woj" userLabel="Timer"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xVK-fk-wVj">
@@ -150,6 +150,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="Timer-Icon-Small" width="29" height="29"/>
     </resources>
 </document>
