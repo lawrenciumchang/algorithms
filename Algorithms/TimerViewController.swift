@@ -37,7 +37,7 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func timerBtn1Released(_ sender: UIButton) {
-        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+        UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
         if(isTimerRunning) {
             stopTimer()
             stopAnimation()
@@ -97,7 +97,7 @@ class TimerViewController: UIViewController {
         let pulseAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
         pulseAnimation.duration = 1
         pulseAnimation.fromValue = 1
-        pulseAnimation.toValue = 0.85
+        pulseAnimation.toValue = 0.825
         pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         pulseAnimation.autoreverses = true
         pulseAnimation.repeatCount = .greatestFiniteMagnitude
