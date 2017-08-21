@@ -136,6 +136,7 @@
 		8B535C591F42316500DE9B68 /* F2LViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C581F42316500DE9B68 /* F2LViewController.swift */; };
 		8B535C5B1F42316C00DE9B68 /* OrientationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B535C5A1F42316C00DE9B68 /* OrientationsViewController.swift */; };
 		8B535C5D1F42317800DE9B68 /* Orientations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B535C5C1F42317800DE9B68 /* Orientations.storyboard */; };
+		8BAC774C1F4B769800273353 /* Algorithms.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BAC774A1F4B769800273353 /* Algorithms.xcdatamodeld */; };
 		8BB2A8801F461ADC0075EBA3 /* PermutationsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB2A87F1F461ADC0075EBA3 /* PermutationsDetailViewController.swift */; };
 		8BB2A8821F462B590075EBA3 /* OrientationsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB2A8811F462B590075EBA3 /* OrientationsDetailViewController.swift */; };
 		8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */; };
@@ -272,6 +273,7 @@
 		8B535C581F42316500DE9B68 /* F2LViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F2LViewController.swift; sourceTree = "<group>"; };
 		8B535C5A1F42316C00DE9B68 /* OrientationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationsViewController.swift; sourceTree = "<group>"; };
 		8B535C5C1F42317800DE9B68 /* Orientations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Orientations.storyboard; sourceTree = "<group>"; };
+		8BAC774B1F4B769800273353 /* Algorithms.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Algorithms.xcdatamodel; sourceTree = "<group>"; };
 		8BB2A87F1F461ADC0075EBA3 /* PermutationsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermutationsDetailViewController.swift; sourceTree = "<group>"; };
 		8BB2A8811F462B590075EBA3 /* OrientationsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrientationsDetailViewController.swift; sourceTree = "<group>"; };
 		8BEC8BC11F41F08A00D26EF0 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -548,6 +550,7 @@
 				8B535C3E1F42263800DE9B68 /* Storyboard */,
 				8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */,
 				8BEC8BD21F41F08A00D26EF0 /* Info.plist */,
+				8BAC774A1F4B769800273353 /* Algorithms.xcdatamodeld */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 				8B4B860C1F45ED31003486C7 /* Permutations.swift in Sources */,
 				8B535C5B1F42316C00DE9B68 /* OrientationsViewController.swift in Sources */,
 				8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */,
+				8BAC774C1F4B769800273353 /* Algorithms.xcdatamodeld in Sources */,
 				8BB2A8801F461ADC0075EBA3 /* PermutationsDetailViewController.swift in Sources */,
 				8B535C591F42316500DE9B68 /* F2LViewController.swift in Sources */,
 				8B535C481F42285300DE9B68 /* MainTabBarViewController.swift in Sources */,
@@ -902,6 +906,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8BAC774A1F4B769800273353 /* Algorithms.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8BAC774B1F4B769800273353 /* Algorithms.xcdatamodel */,
+			);
+			currentVersion = 8BAC774B1F4B769800273353 /* Algorithms.xcdatamodel */;
+			path = Algorithms.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8BEC8BB91F41F08A00D26EF0 /* Project object */;
 }
