@@ -141,6 +141,7 @@
 		8BB2A8821F462B590075EBA3 /* OrientationsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB2A8811F462B590075EBA3 /* OrientationsDetailViewController.swift */; };
 		8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */; };
 		8BEC8BCE1F41F08A00D26EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */; };
+		D48F1C731F536B35007B443E /* PermutationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48F1C721F536B35007B443E /* PermutationsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -280,6 +281,7 @@
 		8BEC8BC41F41F08A00D26EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BEC8BCD1F41F08A00D26EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BEC8BD21F41F08A00D26EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48F1C721F536B35007B443E /* PermutationsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermutationsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +505,7 @@
 				8B535C501F422A3E00DE9B68 /* Permutations.storyboard */,
 				8B535C521F422A4800DE9B68 /* PermutationsViewController.swift */,
 				8BB2A87F1F461ADC0075EBA3 /* PermutationsDetailViewController.swift */,
+				D48F1C721F536B35007B443E /* PermutationsService.swift */,
 			);
 			name = Permutations;
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 				8B535C4F1F422A3600DE9B68 /* TimerViewController.swift in Sources */,
 				8B4B84551F449157003486C7 /* CustomTableViewCell.swift in Sources */,
 				8B4B860A1F45E915003486C7 /* Orientations.swift in Sources */,
+				D48F1C731F536B35007B443E /* PermutationsService.swift in Sources */,
 				8B4B860C1F45ED31003486C7 /* Permutations.swift in Sources */,
 				8B535C5B1F42316C00DE9B68 /* OrientationsViewController.swift in Sources */,
 				8BEC8BC51F41F08A00D26EF0 /* AppDelegate.swift in Sources */,
