@@ -179,7 +179,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilN-nQ-J22">
-                                        <rect key="frame" x="20" y="340" width="160" height="42"/>
+                                        <rect key="frame" x="20" y="348" width="160" height="42"/>
                                         <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="9ma-bX-qb4"/>
@@ -193,7 +193,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-bx-gQV">
-                                        <rect key="frame" x="195" y="340" width="160" height="42"/>
+                                        <rect key="frame" x="195" y="348" width="160" height="42"/>
                                         <color key="backgroundColor" red="0.35756117599999998" green="0.4048585938" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <state key="normal" title="Completed">
@@ -214,7 +214,7 @@
                                     <constraint firstItem="MDC-5d-DYR" firstAttribute="leading" secondItem="6uB-CR-mHS" secondAttribute="leading" id="CPp-Ue-Lyi"/>
                                     <constraint firstItem="6uB-CR-mHS" firstAttribute="leading" secondItem="VvW-UV-cZT" secondAttribute="leading" id="FBf-aY-3rA"/>
                                     <constraint firstItem="ilN-nQ-J22" firstAttribute="leading" secondItem="GZt-Dj-V0r" secondAttribute="leading" constant="20" id="K8k-nM-Nhs"/>
-                                    <constraint firstAttribute="bottom" secondItem="ilN-nQ-J22" secondAttribute="bottom" constant="28" id="NNT-08-L5E"/>
+                                    <constraint firstAttribute="bottom" secondItem="ilN-nQ-J22" secondAttribute="bottom" constant="20" id="NNT-08-L5E"/>
                                     <constraint firstItem="b0F-5s-eWM" firstAttribute="top" secondItem="MDC-5d-DYR" secondAttribute="bottom" constant="2" id="NhA-J5-mAR"/>
                                     <constraint firstItem="ilN-nQ-J22" firstAttribute="baseline" secondItem="xe4-bx-gQV" secondAttribute="firstBaseline" id="P11-Zl-nRS"/>
                                     <constraint firstItem="ilN-nQ-J22" firstAttribute="top" secondItem="xe4-bx-gQV" secondAttribute="top" id="QA8-vx-9QB"/>

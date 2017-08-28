@@ -56,7 +56,6 @@ class PermutationsDetailViewController: UIViewController {
         else {
             for (key, permutation) in permutations.enumerated() {
                 if(permutation.value(forKey: "id") as? Int == identifier) {
-                    print("found data!...")
                     let currentPermutation = permutationsService.getById(id: permutations[key].objectID)!
                     return currentPermutation.status!
                 }
