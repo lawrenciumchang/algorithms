@@ -208,6 +208,13 @@
                                     <constraint firstItem="vy1-Wf-RmZ" firstAttribute="top" secondItem="38b-WQ-J4i" secondAttribute="top" constant="70" id="scr-d9-DIM"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ouw-ua-fRw">
+                                <rect key="frame" x="327" y="36" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="W5c-b8-Gt9"/>
+                                    <constraint firstAttribute="height" constant="32" id="mk1-Ht-IUj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -217,9 +224,11 @@
                             <constraint firstItem="yiK-dH-0e6" firstAttribute="top" secondItem="38b-WQ-J4i" secondAttribute="bottom" id="BpG-f4-Ydy"/>
                             <constraint firstItem="2oT-Cd-TYa" firstAttribute="centerX" secondItem="38b-WQ-J4i" secondAttribute="centerX" id="EW9-AF-0uI"/>
                             <constraint firstItem="38b-WQ-J4i" firstAttribute="top" secondItem="teo-0M-OGS" secondAttribute="top" constant="208" id="N8R-qy-OFR"/>
+                            <constraint firstItem="Ouw-ua-fRw" firstAttribute="top" secondItem="Pmr-OM-9b7" secondAttribute="bottom" constant="16" id="S3k-nq-7rU"/>
                             <constraint firstItem="38b-WQ-J4i" firstAttribute="leading" secondItem="teo-0M-OGS" secondAttribute="leading" id="WSh-8f-mKR"/>
                             <constraint firstItem="38b-WQ-J4i" firstAttribute="top" secondItem="2oT-Cd-TYa" secondAttribute="bottom" constant="10" id="ie1-Jc-e3F"/>
                             <constraint firstItem="2oT-Cd-TYa" firstAttribute="top" secondItem="Pmr-OM-9b7" secondAttribute="bottom" constant="38" id="kqT-or-ku9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ouw-ua-fRw" secondAttribute="trailing" id="xjt-IK-cE8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -228,6 +237,7 @@
                         <outlet property="headerLabel" destination="nn0-o5-Uiv" id="NLv-4r-RDA"/>
                         <outlet property="inProgressBtn" destination="v94-da-mbA" id="n9N-u1-USi"/>
                         <outlet property="solutionLabel" destination="vy1-Wf-RmZ" id="GxZ-Xx-3sU"/>
+                        <outlet property="statusImage" destination="Ouw-ua-fRw" id="2SZ-8S-HjB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfS-ls-Wn2" userLabel="First Responder" sceneMemberID="firstResponder"/>

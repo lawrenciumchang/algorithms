@@ -18,15 +18,15 @@ class PermutationsDetailViewController: UIViewController {
     @IBOutlet weak var solutionLabel: UILabel!
     @IBOutlet weak var inProgressBtn: UIButton!
     @IBOutlet weak var completedBtn: UIButton!
+    @IBOutlet weak var statusImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         printAll(identifier: identifier)
         
-        // create getStatus function, use its return to set image type
         let currentStatus = getStatus()
-        print("current status is: \(currentStatus)")
+        setStatusImage(status: currentStatus)
         
         cubeImage.image = UIImage(named: Permutations.dataList[identifier].0)
         solutionLabel.text = Permutations.dataList[identifier].1
@@ -84,6 +84,23 @@ class PermutationsDetailViewController: UIViewController {
         }
     }
     
+    func setStatusImage(status: String) {
+        switch status {
+            case "incomplete":
+                statusImage.image = nil
+                break
+            case "in-progress":
+                statusImage.image = #imageLiteral(resourceName: "In-Progress-Icon")
+                break
+            case "completed":
+                statusImage.image = #imageLiteral(resourceName: "Completed-Icon")
+                break
+            default:
+                statusImage.image = nil
+                break
+        }
+    }
+    
     func updateStatus(newStatus: String) {
         // Create an instance of the service.
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -130,15 +147,15 @@ class PermutationsDetailViewController: UIViewController {
     }
     
     @IBAction func inProgressBtnClicked(_ sender: Any) {
-        print("in progress btn clicked")
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
         updateStatus(newStatus: "in-progress")
+        setStatusImage(status: "in-progress")
     }
     
     @IBAction func completedBtnClicked(_ sender: Any) {
-        print("completed btn clicked")
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
         updateStatus(newStatus: "completed")
+        setStatusImage(status: "completed")
     }
     
 }
