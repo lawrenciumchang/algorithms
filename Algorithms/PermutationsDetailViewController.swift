@@ -24,9 +24,9 @@ class PermutationsDetailViewController: UIViewController {
         
         printAll(identifier: identifier)
         
-        // create a function to init permutationsService
-        
         // create getStatus function, use its return to set image type
+        let currentStatus = getStatus()
+        print("current status is: \(currentStatus)")
         
         cubeImage.image = UIImage(named: Permutations.dataList[identifier].0)
         solutionLabel.text = Permutations.dataList[identifier].1
@@ -59,9 +59,66 @@ class PermutationsDetailViewController: UIViewController {
         }
     }
     
-    func updateStatus(identifier: Int) {
-        // drop all code in here, then reference function. (will pass in string as parameter)
+    func getStatus() -> String {
+        // Create an instance of the service.
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return ""
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let permutationsService = PermutationsService(context: managedContext)
         
+        let permutations : [PermutationEntity] = permutationsService.getAll()
+        
+        if(permutations.count == 0) {
+            return "incomplete"
+        }
+        else {
+            for (key, permutation) in permutations.enumerated() {
+                if(permutation.value(forKey: "id") as? Int == identifier) {
+                    print("found data!...")
+                    let currentPermutation = permutationsService.getById(id: permutations[key].objectID)!
+                    return currentPermutation.status!
+                }
+            }
+            return "incomplete"
+        }
+    }
+    
+    func updateStatus(newStatus: String) {
+        // Create an instance of the service.
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let permutationsService = PermutationsService(context: managedContext)
+        
+        let permutations : [PermutationEntity] = permutationsService.getAll()
+        
+        if(permutations.count == 0) {
+            print("creating since size is 0...")
+            _ = permutationsService.create(id: identifier, status: newStatus)
+        }
+        else {
+            var updated = false
+            for (key, permutation) in permutations.enumerated() {
+                if(permutation.value(forKey: "id") as? Int == identifier) {
+                    print("updating...")
+                    let currentPermutation = permutationsService.getById(id: permutations[key].objectID)!
+                    currentPermutation.status = newStatus
+                    permutationsService.update(updatedPermutationEntity: currentPermutation)
+                    updated = true
+                    break
+                }
+            }
+            if(!updated) {
+                print("creating new...")
+                _ = permutationsService.create(id: identifier, status: newStatus)
+                print("done creating new. no more!")
+            }
+            
+        }
+        
+        permutationsService.saveChanges()
     }
     
     func performSegueToReturnBack()  {
@@ -75,81 +132,13 @@ class PermutationsDetailViewController: UIViewController {
     @IBAction func inProgressBtnClicked(_ sender: Any) {
         print("in progress btn clicked")
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
-        
-        // Create an instance of the service.
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let permutationsService = PermutationsService(context: managedContext)
-        
-        let permutations : [PermutationEntity] = permutationsService.getAll()
-        if(permutations.count == 0) {
-            print("creating since size is 0...")
-            _ = permutationsService.create(id: identifier, status: "in-progress")
-        }
-        else {
-            var updated = false
-            for (key, permutation) in permutations.enumerated() {
-                if(permutation.value(forKey: "id") as? Int == identifier) {
-                    print("updating...")
-                    let selectedPermutation = permutationsService.getById(id: permutations[key].objectID)!
-                    selectedPermutation.status = "in-progress"
-                    permutationsService.update(updatedPermutationEntity: selectedPermutation)
-                    updated = true
-                    break
-                }
-            }
-            if(!updated) {
-                print("creating new...")
-                _ = permutationsService.create(id: identifier, status: "in-progress")
-                print("done creating new. no more!")
-            }
-
-        }
-        
-        // make sure to save everything after
-        
+        updateStatus(newStatus: "in-progress")
     }
     
     @IBAction func completedBtnClicked(_ sender: Any) {
         print("completed btn clicked")
         UIImpactFeedbackGenerator(style: .light).impactOccurred()
-        
-        // Create an instance of the service.
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let permutationsService = PermutationsService(context: managedContext)
-        
-        let permutations : [PermutationEntity] = permutationsService.getAll()
-        if(permutations.count == 0) {
-            print("creating since size is 0...")
-            _ = permutationsService.create(id: identifier, status: "completed")
-        }
-        else {
-            var updated = false
-            for (key, permutation) in permutations.enumerated() {
-                if(permutation.value(forKey: "id") as? Int == identifier) {
-                    print("updating...")
-                    let selectedPermutation = permutationsService.getById(id: permutations[key].objectID)!
-                    selectedPermutation.status = "completed"
-                    permutationsService.update(updatedPermutationEntity: selectedPermutation)
-                    updated = true
-                    break
-                }
-            }
-            if(!updated) {
-                print("creating new...")
-                _ = permutationsService.create(id: identifier, status: "completed")
-                print("done creating new. no more!")
-            }
-            
-        }
-        
-        // make sure to save
-        
+        updateStatus(newStatus: "completed")
     }
     
 }
