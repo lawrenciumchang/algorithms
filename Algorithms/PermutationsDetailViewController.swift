@@ -23,10 +23,7 @@ class PermutationsDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        printAll(identifier: identifier)
-        
-        let currentStatus = getStatus()
-        setStatusImage(status: currentStatus)
+        setStatusImage(status: getStatus())
         
         cubeImage.image = UIImage(named: Permutations.dataList[identifier].0)
         solutionLabel.text = Permutations.dataList[identifier].1
@@ -37,26 +34,6 @@ class PermutationsDetailViewController: UIViewController {
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(performSegueToReturnBack))
         swipeRight.direction = .right
         self.view.addGestureRecognizer(swipeRight)
-    }
-    
-    // don't need this anymore
-    func printAll(identifier: Int) {
-        guard let appDelegate =
-            UIApplication.shared.delegate as? AppDelegate else {
-                return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "PermutationEntity")
-        
-        do {
-            print("getting fetched results...")
-            let fetchedResults = try managedContext.fetch(fetchRequest)
-            for item in fetchedResults {
-                print(item.value(forKey: "id")!, item.value(forKey: "status")!)
-            }
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-        }
     }
     
     func getStatus() -> String {
