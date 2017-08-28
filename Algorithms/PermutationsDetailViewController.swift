@@ -25,6 +25,10 @@ class PermutationsDetailViewController: UIViewController {
         
         setStatusImage(status: getStatus())
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(PermutationsDetailViewController.resetStatus))
+        statusImage.isUserInteractionEnabled = true
+        statusImage.addGestureRecognizer(tapGestureRecognizer)
+        
         cubeImage.image = UIImage(named: Permutations.dataList[identifier].0)
         solutionLabel.text = Permutations.dataList[identifier].1
         
@@ -89,14 +93,12 @@ class PermutationsDetailViewController: UIViewController {
         let permutations : [PermutationEntity] = permutationsService.getAll()
         
         if(permutations.count == 0) {
-            print("creating since size is 0...")
             _ = permutationsService.create(id: identifier, status: newStatus)
         }
         else {
             var updated = false
             for (key, permutation) in permutations.enumerated() {
                 if(permutation.value(forKey: "id") as? Int == identifier) {
-                    print("updating...")
                     let currentPermutation = permutationsService.getById(id: permutations[key].objectID)!
                     currentPermutation.status = newStatus
                     permutationsService.update(updatedPermutationEntity: currentPermutation)
@@ -105,9 +107,7 @@ class PermutationsDetailViewController: UIViewController {
                 }
             }
             if(!updated) {
-                print("creating new...")
                 _ = permutationsService.create(id: identifier, status: newStatus)
-                print("done creating new. no more!")
             }
             
         }
@@ -121,6 +121,11 @@ class PermutationsDetailViewController: UIViewController {
         } else {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    func resetStatus() {
+        updateStatus(newStatus: "incomplete")
+        setStatusImage(status: "incomplete")
     }
     
     @IBAction func inProgressBtnClicked(_ sender: Any) {
