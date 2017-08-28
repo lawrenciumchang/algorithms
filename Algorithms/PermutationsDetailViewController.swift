@@ -123,8 +123,11 @@ class PermutationsDetailViewController: UIViewController {
     }
     
     func resetStatus() {
-        updateStatus(newStatus: "incomplete")
-        setStatusImage(status: "incomplete")
+        if(getStatus() != "incomplete") {
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            updateStatus(newStatus: "incomplete")
+            setStatusImage(status: "incomplete")
+        }
     }
     
     @IBAction func inProgressBtnClicked(_ sender: Any) {
