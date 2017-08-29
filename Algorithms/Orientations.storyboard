@@ -234,12 +234,21 @@
                                     <constraint firstAttribute="trailing" secondItem="hrm-FI-erZ" secondAttribute="trailing" constant="32" id="v9c-GL-qDL"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-Nf-2Vw">
+                                <rect key="frame" x="327" y="36" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Mzy-Gs-KNB"/>
+                                    <constraint firstAttribute="width" constant="32" id="lq0-cj-MgT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GZt-Dj-V0r" firstAttribute="centerX" secondItem="s8Q-NB-Gug" secondAttribute="centerX" id="A8b-KR-n1x"/>
                             <constraint firstItem="s8Q-NB-Gug" firstAttribute="top" secondItem="8uw-uD-EQt" secondAttribute="bottom" constant="38" id="P02-ED-FZe"/>
                             <constraint firstItem="GZt-Dj-V0r" firstAttribute="bottom" secondItem="19l-8F-jXd" secondAttribute="top" id="bZa-Ql-o4L"/>
+                            <constraint firstItem="bzV-Nf-2Vw" firstAttribute="trailing" secondItem="DZy-sn-KdG" secondAttribute="trailingMargin" id="egO-E4-oBw"/>
+                            <constraint firstItem="bzV-Nf-2Vw" firstAttribute="top" secondItem="8uw-uD-EQt" secondAttribute="bottom" constant="16" id="gNH-2c-4z7"/>
                             <constraint firstItem="GZt-Dj-V0r" firstAttribute="top" secondItem="DZy-sn-KdG" secondAttribute="top" constant="208" id="lke-QT-b4R"/>
                             <constraint firstAttribute="trailing" secondItem="GZt-Dj-V0r" secondAttribute="trailing" id="psC-nh-EEk"/>
                             <constraint firstItem="GZt-Dj-V0r" firstAttribute="leading" secondItem="DZy-sn-KdG" secondAttribute="leading" id="rU2-BZ-0ZV"/>
@@ -252,6 +261,7 @@
                         <outlet property="inProgressBtn" destination="ilN-nQ-J22" id="EMr-Nh-sNw"/>
                         <outlet property="solutionLabelA" destination="hrm-FI-erZ" id="1I0-g1-ZIq"/>
                         <outlet property="solutionLabelB" destination="B89-X0-2g3" id="2Ln-UD-HWo"/>
+                        <outlet property="statusImage" destination="bzV-Nf-2Vw" id="iou-CV-rK4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0C-Hj-z7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
