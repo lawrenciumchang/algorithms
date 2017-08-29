@@ -10,11 +10,20 @@ import UIKit
 
 class F2LViewController: UIViewController {
     
+    @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var algorithmsBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         algorithmsBtn.layer.cornerRadius = 4
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(F2LViewController.hapticResponse))
+        mainImage.isUserInteractionEnabled = true
+        mainImage.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func hapticResponse() {
+        UIImpactFeedbackGenerator(style: .light).impactOccurred()
     }
     
     @IBAction func onBtnClick(_ sender: Any) {

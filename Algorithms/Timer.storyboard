@@ -47,16 +47,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-YN-fT0">
-                                <rect key="frame" x="6" y="328" width="363" height="280"/>
-                                <color key="backgroundColor" red="0.35686274509803922" green="0.40392156862745099" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="6Yc-Ej-8lk"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="timerBtn1Released:" destination="mI3-Ht-Reg" eventType="touchUpInside" id="8Ot-HZ-FwE"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtG-ph-Ff3">
                                 <rect key="frame" x="6" y="153" width="116.5" height="167"/>
                                 <subviews>
@@ -109,6 +99,16 @@
                                     <constraint firstItem="bNO-0E-ZHY" firstAttribute="width" secondItem="B8S-bj-C0w" secondAttribute="width" id="uvk-27-1GU"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-YN-fT0">
+                                <rect key="frame" x="6" y="328" width="363" height="280"/>
+                                <color key="backgroundColor" red="0.35686274509803922" green="0.40392156862745099" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="6Yc-Ej-8lk"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timerBtn1Released:" destination="mI3-Ht-Reg" eventType="touchUpInside" id="8Ot-HZ-FwE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
