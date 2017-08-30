@@ -13,5 +13,6 @@ class CustomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var cubeImage: UIImageView!
     @IBOutlet weak var solutionLabel: UILabel!
+    @IBOutlet weak var statusIcon: UIImageView!
 
 }
