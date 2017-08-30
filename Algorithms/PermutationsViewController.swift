@@ -45,7 +45,6 @@ class PermutationsViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ permutationsTable: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let position = indexPath.row
         let cell = permutationsTable.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
-    
         
         cell.cubeImage.image = UIImage(named: Permutations.dataList[position].0)
         cell.solutionLabel.text = Permutations.dataList[position].1
@@ -57,7 +56,7 @@ class PermutationsViewController: UIViewController, UITableViewDataSource, UITab
         else if(status == "completed") {
             cell.statusIcon.image = #imageLiteral(resourceName: "Completed-Icon")
         }
-        else {
+        else if(status == "incomplete"){
             cell.statusIcon.image = nil
         }
         

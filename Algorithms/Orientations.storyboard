@@ -62,26 +62,37 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="solutionLabel" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="178" translatesAutoresizingMaskIntoConstraints="NO" id="ScH-em-fnW">
-                                                    <rect key="frame" x="127" y="8" width="229" height="94"/>
+                                                    <rect key="frame" x="127" y="8" width="219" height="94"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="219" id="ufE-cP-qYZ"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fY9-MN-S44">
+                                                    <rect key="frame" x="350" y="43" width="24" height="24"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ScH-em-fnW" secondAttribute="trailing" constant="11" id="0UF-ji-Zaw"/>
+                                                <constraint firstItem="fY9-MN-S44" firstAttribute="leading" secondItem="ScH-em-fnW" secondAttribute="trailing" constant="4" id="4tH-nQ-CNx"/>
                                                 <constraint firstItem="xKM-zR-NOK" firstAttribute="centerY" secondItem="zp5-F3-YXq" secondAttribute="centerY" constant="-0.75" id="7YY-JA-iPj"/>
+                                                <constraint firstItem="ScH-em-fnW" firstAttribute="centerY" secondItem="zp5-F3-YXq" secondAttribute="centerY" id="ChI-wj-iNc"/>
+                                                <constraint firstItem="fY9-MN-S44" firstAttribute="top" secondItem="zp5-F3-YXq" secondAttribute="topMargin" constant="35" id="JLo-wX-3Jt"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="xKM-zR-NOK" secondAttribute="bottom" constant="2.5" id="Kvo-UP-1T8"/>
-                                                <constraint firstItem="ScH-em-fnW" firstAttribute="leading" secondItem="xKM-zR-NOK" secondAttribute="trailing" constant="18" id="puW-MB-ZxI"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fY9-MN-S44" secondAttribute="trailing" constant="-7" id="ORM-1c-rC4"/>
+                                                <constraint firstItem="ScH-em-fnW" firstAttribute="leading" secondItem="xKM-zR-NOK" secondAttribute="trailing" constant="18" id="aSD-KQ-zNW"/>
+                                                <constraint firstItem="ScH-em-fnW" firstAttribute="top" secondItem="zp5-F3-YXq" secondAttribute="topMargin" id="iJ1-M0-824"/>
+                                                <constraint firstItem="fY9-MN-S44" firstAttribute="centerY" secondItem="ScH-em-fnW" secondAttribute="centerY" id="j8c-4c-Sy5"/>
+                                                <constraint firstItem="ScH-em-fnW" firstAttribute="centerY" secondItem="fY9-MN-S44" secondAttribute="centerY" id="vz6-0X-y7w"/>
                                                 <constraint firstItem="xKM-zR-NOK" firstAttribute="leading" secondItem="zp5-F3-YXq" secondAttribute="leadingMargin" constant="11" id="wAz-k4-xym"/>
-                                                <constraint firstItem="ScH-em-fnW" firstAttribute="centerY" secondItem="xKM-zR-NOK" secondAttribute="centerY" constant="0.75" id="wJC-SQ-QwB"/>
                                                 <constraint firstItem="xKM-zR-NOK" firstAttribute="top" secondItem="zp5-F3-YXq" secondAttribute="top" constant="9" id="wOO-wa-sph"/>
-                                                <constraint firstItem="ScH-em-fnW" firstAttribute="top" secondItem="zp5-F3-YXq" secondAttribute="topMargin" id="zud-wN-Mc1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="cubeImage" destination="xKM-zR-NOK" id="eu9-3e-vDR"/>
                                             <outlet property="solutionLabel" destination="ScH-em-fnW" id="pHF-59-yMg"/>
+                                            <outlet property="statusIcon" destination="fY9-MN-S44" id="jGA-C0-nos"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
