@@ -65,19 +65,27 @@ class PermutationsDetailViewController: UIViewController {
     }
     
     func setStatusImage(status: String) {
-        switch status {
-            case "incomplete":
-                statusImage.image = nil
-                break
-            case "in-progress":
-                statusImage.image = #imageLiteral(resourceName: "In-Progress-Icon")
-                break
-            case "completed":
-                statusImage.image = #imageLiteral(resourceName: "Completed-Icon")
-                break
-            default:
-                statusImage.image = nil
-                break
+        if(status == "incomplete") {
+            UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: { () -> Void in
+                self.statusImage.alpha = 0
+            }, completion: { (Bool) -> Void in })
+        }
+        else {
+            statusImage.alpha = 0
+            switch status {
+                case "in-progress":
+                    statusImage.image = #imageLiteral(resourceName: "In-Progress-Icon")
+                    break
+                case "completed":
+                    statusImage.image = #imageLiteral(resourceName: "Completed-Icon")
+                    break
+                default:
+                    statusImage.image = nil
+                    break
+            }
+            UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.showHideTransitionViews, animations: { () -> Void in
+                self.statusImage.alpha = 1
+            }, completion: { (Bool) -> Void in })
         }
     }
     
